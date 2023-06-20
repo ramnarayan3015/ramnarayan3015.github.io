@@ -95,6 +95,15 @@ body {
   margin-bottom: 2.4rem;
   text-align: left;
 }
+
+/* @media (max-width: 768px) {
+  .heading-primary {
+    font-size: 5.2rem;
+    margin-bottom: 2.4rem;
+    text-align: none;
+  }
+} */
+
 .heading-secondary {
   font-size: 3.6rem;
   line-height: 1.2;
