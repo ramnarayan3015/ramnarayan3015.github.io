@@ -64,6 +64,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    background-color: teal;
   }
   .main-nav-list {
     flex-direction: column;
