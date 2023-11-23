@@ -21,8 +21,8 @@
 
   <link rel="stylesheet" href="css/timeline.css">
   <link rel="stylesheet" href="css/imageViewer.css">
-
-
+  <link rel="stylesheet" href="css/image_carousel.css">
+  <link rel="stylesheet" href="css/drop_down.css">
 
   <title>Vaithianathan Ramnarayan</title>
 </head>
@@ -48,7 +48,12 @@
           <a href="#section-skills" class="main-nav-link">Skills</a>
         </ul>
         <ul>
-          <a href="#experience" class="main-nav-link">Work Experience</a>
+          <div class="dropdown">
+            <a href="#experience" class="main-nav-link">Work Experience</a>
+            <div class="dropdown-content" style="background-color: teal;">
+              <a href="" class="main-nav-link" style="font-size:100%;">Appreciations</a>
+            </div>
+          </div>
         </ul>
         <ul>
           <a href="#education" class="main-nav-link">Education</a>
@@ -538,7 +543,7 @@
               <div class="date">November 2021 - April 2023</div>
               <div class="title">Liver Pool John Moores University</div>
               <div class="descr">MS in Computer Science</div>
-              <div class="descr">Percentage - 70% - Distinction</div>
+              <div class="descr">Percentage - 71% - Distinction</div>
               <div class="descr">Liverpool, UK</div>
             </li>
             <li style="--accent-color:#FBCA3E">
@@ -562,9 +567,68 @@
     </div>
     </div>
     </section>
+<!-- 
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_12.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_13.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_1.jpg" alt="First slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_2.jpg" alt="Second slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_3.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_4.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_5.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_6.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_7.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_8.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_9.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_10.jpg" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="/img/TechStackLarge/app_11.jpg" alt="Third slide"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="background-color: black;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="background-color: black;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section> -->
 
     <!-- Section CTA -->
-    <section class="section-cta" id="section-cta">
+    <section class="section-cta" id="section-cta" style="margin-top: 15%;">
       <div class="container grid grid-col-2">
         <div class="cta-text-box">
           <span class="cta-subheading">Have some questions?</span>
@@ -629,7 +693,7 @@
                   <ion-icon name="logo-github"></ion-icon> GitHub
                 </a>
                 <a class="footer-link"
-                  href="https://drive.google.com/file/d/1SQD1-hXCUM4dYxPWxg2CeDfIbY_WEHb8/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1kxDswn11Kc4Pd5cU39D9g5Ami3c6mKnt/view?usp=sharing"
                   style="color: white;">
                   <ion-icon name="document-outline"></ion-icon> Resume
                 </a>
@@ -654,6 +718,8 @@
   <script src="js/index.js"></script>
   <script src="js/timeline.js"></script>
   <script src="js/imageViewer.js"></script>
+  <script src="js/image_carousel.js"></script>
+
   <!-- Ion icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
