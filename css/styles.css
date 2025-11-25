@@ -714,6 +714,18 @@ footer {
   margin-top: 0;
   color: white;
 }
+
+.section-skills .heading-secondary {
+  color: white !important;
+}
+
+.section-skills .subheading {
+  color: white !important;
+}
+
+.section-skills .portfolio-title {
+  color: white !important;
+}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
