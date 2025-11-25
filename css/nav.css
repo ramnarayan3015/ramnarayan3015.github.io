@@ -64,7 +64,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    background-color: teal;
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5170 100%);
   }
   .main-nav-list {
     flex-direction: column;

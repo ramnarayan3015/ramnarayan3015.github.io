@@ -5,6 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vaithianathan Ramnarayan - MLOps Engineer specializing in production ML systems, GenAI platforms, and cloud infrastructure. 7 years of experience building scalable AI solutions." />
+  <meta name="keywords" content="MLOps Engineer, AI Engineer, Machine Learning, GenAI, AWS, Kubernetes, DataDog, OpenTelemetry, LLM, RAG" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ramnarayan3015.github.io/" />
+  <meta property="og:title" content="Vaithianathan Ramnarayan - MLOps Engineer" />
+  <meta property="og:description" content="MLOps Engineer specializing in production ML systems, GenAI platforms, and cloud infrastructure. Building scalable AI solutions for enterprises." />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://ramnarayan3015.github.io/" />
+  <meta property="twitter:title" content="Vaithianathan Ramnarayan - MLOps Engineer" />
+  <meta property="twitter:description" content="MLOps Engineer specializing in production ML systems, GenAI platforms, and cloud infrastructure." />
   <link rel="icon" type="image/png" href="./img/favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/general.css" />
@@ -23,8 +35,60 @@
   <link rel="stylesheet" href="css/imageViewer.css">
   <link rel="stylesheet" href="css/image_carousel.css">
   <link rel="stylesheet" href="css/drop_down.css">
+  <link rel="stylesheet" href="css/enhancements.css">
+  <link rel="stylesheet" href="css/certifications.css">
+  <link rel="stylesheet" href="css/awards.css">
+  <link rel="stylesheet" href="css/experience.css">
+  
+  <style>
+    /* Smooth Scrolling - already in general.css */
+  </style>
 
-  <title>Vaithianathan Ramnarayan</title>
+  <title>Vaithianathan Ramnarayan - MLOps Engineer | AI & GenAI Specialist</title>
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vaithianathan Ramnarayan",
+    "jobTitle": "MLOps Engineer",
+    "url": "https://ramnarayan3015.github.io",
+    "email": "srnath96@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/ramnarayan-v-ai-ml-mlops-engineer",
+      "https://github.com/ramnarayan3015"
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Liverpool John Moores University",
+        "degree": "MS in Computer Science"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "International Institute of Information Technology",
+        "degree": "Post Graduate in Software Development"
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Clio",
+      "jobTitle": "Intermediate MLOps Engineer"
+    },
+    "knowsAbout": [
+      "MLOps",
+      "Machine Learning",
+      "GenAI",
+      "AWS",
+      "Kubernetes",
+      "DataDog",
+      "OpenTelemetry",
+      "LLM",
+      "RAG"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -41,29 +105,35 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
       <ul class="main-nav-list">
-        <ul>
+        <li>
           <a href="#section-about-me" class="main-nav-link">About Me</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a href="#section-skills" class="main-nav-link">Skills</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
+          <a href="#section-portfolio" class="main-nav-link">Portfolio</a>
+        </li>
+        <li>
           <div class="dropdown">
             <a href="#experience" class="main-nav-link">Work Experience</a>
             <!-- <div class="dropdown-content" style="background-color: teal;">
               <a href="" class="main-nav-link" style="font-size:100%;">Appreciations</a>
             </div> -->
           </div>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a href="#education" class="main-nav-link">Education</a>
-        </ul>
-        <!-- <ul>
-          <a href="#section-cta" class="main-nav-link">Contact</a>
-        </ul> -->
-        <ul>
-          <a href="#section-portfolio" class="nav-cta main-nav-link">Portfolio</a>
-        </ul>
+        </li>
+        <li>
+          <a href="#certifications" class="main-nav-link">Certifications</a>
+        </li>
+        <li>
+          <a href="#awards" class="main-nav-link">Awards</a>
+        </li>
+        <li>
+          <a href="#section-cta" class="nav-cta main-nav-link">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -74,9 +144,26 @@
         <div class="hero-text-box">
           <h1 class="heading-primary">MLOps Engineer</h1>
           <p class="hero-description">
-            Making AI work for you.
+            Building production-ready AI systems that scale. Specializing in GenAI platforms, ML pipelines, and cloud infrastructure.
           </p>
-          <a class="btn hero-btn" href="#section-cta">Contact Me</a>
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">7</span>
+              <span class="hero-stat-label">Years Experience</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">40%</span>
+              <span class="hero-stat-label">Faster Deployments</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">50%</span>
+              <span class="hero-stat-label">Cost Optimization</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a class="btn hero-btn" href="#section-cta">Contact Me</a>
+            <a class="btn hero-btn-secondary" href="#section-portfolio">View Work</a>
+          </div>
         </div>
         <div class="hero-img-box">
           <!-- <picture> -->
@@ -106,27 +193,67 @@
           <img class="modal-content" id="full-image">
         </div> -->
         <div class="about-me-text-box">
-          <span class="subheading" style="color: #666;">About Me</span>
-          <h2 class="heading-secondary" style="color: #666;">
+          <span class="subheading">About Me</span>
+          <h2 class="heading-secondary">
             Empowering AI solutions from prototype to production
           </h2>
           <p class="about-me-text">
-            <!-- Hi, I'm Vaithianathan Ramnarayan. I'm a freelance web developer based in
-              Pune. I design and develop websites, single and multi page
-              applications for indviduals and startups. I'm proficient in
-              developing digital solutions like landing pages, e-commerce store,
-              blog websites and custom ERP products. -->
-            Hi, I'm <span class="highlight">Vaithianathan Ramnarayan</span>, an accomplished Technical Lead and AI/MLOps Engineer with over 6 years of experience working in IT organizations. In addition, I have acquired more than two years of invaluable experience in the healthcare sector. My expertise lies in leveraging the power of AI to tackle complex healthcare problems head-on.
+            Results-driven MLOps Engineer with 7 years of software engineering experience and 3+ years specializing in production ML systems, GenAI platforms, and cloud infrastructure. My mission is to drive technological innovation by building robust, scalable AI solutions that deliver real-world impact for enterprises.
           </p>
           <p class="about-me-text">
-            In my career, I have successfully developed and implemented innovative AI solutions to address a wide range of healthcare challenges, including diagnostics and treatment.
+            As an Intermediate MLOps Engineer at Clio and former Technical Lead (AI Solutions Architect) at CitiusTech, I've architected and deployed scalable ML pipelines, RAG-enabled AI features, and multi-region GenAI platforms across healthcare and legal domains. My expertise includes AWS (SageMaker, EKS), Azure OpenAI, Terraform, Kubernetes, DataDog, OpenTelemetry, and integrating LLMs within production infrastructure.
           </p>
           <p class="about-me-text">
-            By combining my skills and experience, I am committed to making a meaningful impact. My passion lies in leveraging cutting-edge technologies to drive positive transformation.
+            Delivered projects that reduced ML deployment times by 40%, optimized cloud infrastructure by 50%, and enabled observability and compliance for enterprise AI systems.
           </p>
           <p class="about-me-text">
-            Together, we can explore how AI can revolutionize different industries and enhance outcomes. Join me on this exciting journey!
+            Specialized in designing end-to-end solutions: from real-time ML workflows in healthcare and legal tech, to comprehensive monitoring and robust security for global deployments.
           </p>
+          <p class="about-me-text">
+            Skilled in translating ambiguous requirements into production-ready systems, leveraging T-shaped skills—high-level architecture vision combined with deep technical execution.
+          </p>
+          <p class="about-me-text">
+            My academic foundation includes an MS in Computer Science from Liverpool John Moores University, UK, and a PG degree from IIIT Bangalore. I hold certifications in AWS Solutions Architecture, Data Science, and more. Driven by continuous learning, cross-team collaboration, and a hands-on approach, I constantly explore new technologies to solve complex business challenges.
+          </p>
+          <p class="about-me-text">
+            If you're seeking an AI engineer who can bridge business needs and technical execution, and who's passionate about impactful, innovative solutions—let's connect!
+          </p>
+          <p class="about-me-text">
+            <a href="mailto:srnath96@gmail.com" style="color: #339af0; text-decoration: none;">📧 srnath96@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Metrics/Achievements -->
+    <section class="section-metrics" id="section-metrics">
+      <div class="container">
+        <h2 class="heading-secondary">Impact & Achievements</h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-number">40%</div>
+            <div class="metric-label">Reduction in ML Deployment Times</div>
+            <div class="metric-description">Streamlined MLOps pipelines for faster time-to-production</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">💰</div>
+            <div class="metric-number">50%</div>
+            <div class="metric-label">Cloud Infrastructure Optimization</div>
+            <div class="metric-description">Cost savings through intelligent resource management</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">🌍</div>
+            <div class="metric-number">4</div>
+            <div class="metric-label">Multi-Region Deployments</div>
+            <div class="metric-description">US, CA, AU, EU with full observability and RBAC</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">🚀</div>
+            <div class="metric-number">2</div>
+            <div class="metric-label">Weeks to Production</div>
+            <div class="metric-description">Reply Suggestions feature delivered for ClioCon 2024</div>
+          </div>
         </div>
       </div>
     </section>
@@ -351,28 +478,202 @@
           <p class="portfolio-title">Miro Board</p>
         </div>
 
-        <div class="skill-item">
-          <img class="skill-item-img" src="./img/TechStackLarge/google-icon.svg" />
-          <p class="portfolio-title">Googling</p>
-        </div>
       </div>
     </section>
 
     <!-- Section Portfolio -->
     <section class="section-portfolio" id="section-portfolio">
       <div class="container">
-        <span class="subheading" style="color: black;">Portfolio</span>
-        <h2 class="heading-secondary" style="color: black;">Check out my best work</h2>
+        <span class="subheading">Portfolio</span>
+        <h2 class="heading-secondary">Check out my best work</h2>
+      </div>
+      
+      <!-- Featured Projects Section -->
+      <div class="container featured-projects-container">
+        <h3 class="featured-projects-heading">Featured Projects</h3>
+        <div class="container flex">
+          <div class="grid grid-col-3 featured-projects">
+            <div class="portfolio-card featured-card">
+              <div class="portfolio-badge">Featured</div>
+              <div class="portfolio-text-box">
+                <p class="portfolio-title">AI Citations and Summarization</p>
+                <p class="portfolio-description">
+                  Architected and shipped high-impact features for Clio's legal platform, including AI Citations and Summarization. Collaborated closely with cross-functional teams to design, implement, and deploy scalable solutions that enhance document analysis capabilities.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">AWS</span>
+                  <span class="tag">GenAI</span>
+                  <span class="tag">RAG</span>
+                  <span class="tag">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card featured-card">
+              <div class="portfolio-badge">Featured</div>
+              <div class="portfolio-text-box">
+                <p class="portfolio-title">Braintrust Data Plane Multi-Region</p>
+                <p class="portfolio-description">
+                  Deployed Braintrust Data Plane to US, CA, AU, and EU regions with full observability and RBAC. Implemented security best practices (Secrets Manager integration, access key audits) and optimized infrastructure for significant cost savings.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">AWS</span>
+                  <span class="tag">Terraform</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Multi-Region</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card featured-card">
+              <div class="portfolio-badge">Featured</div>
+              <div class="portfolio-text-box">
+                <p class="portfolio-title">Multi-Layered Observability Platform</p>
+                <p class="portfolio-description">
+                  Established multi-layered observability using OpenTelemetry and DataDog, standardizing custom metric design, reducing monitoring costs, and delivering dashboards for near real-time platform visibility across all services.
+                </p>
+                <div class="portfolio-tags">
+                  <span class="tag">DataDog</span>
+                  <span class="tag">OpenTelemetry</span>
+                  <span class="tag">Observability</span>
+                  <span class="tag">Metrics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Projects Section -->
+      <div class="container">
+        <h3 class="all-projects-heading">All Projects</h3>
       </div>
       <div class="container flex">
         <div class="grid grid-col-3">
           
           <div class="portfolio-card">
             <div class="portfolio-text-box">
+              <p class="portfolio-title">Timeline Generation Feature</p>
+              <p class="portfolio-description">
+                End-to-end ownership of Timeline Generation feature: co-led design and ticket breakdown, executed load testing, production deployment, and resolved critical pre-signed URL expiration issue—maintaining seamless service integration with zero downtime.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Load Testing</span>
+                <span class="tag">Zero Downtime</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">RAG Index Pipeline Benchmarking</p>
+              <p class="portfolio-description">
+                Spearheaded RAG index pipeline benchmarking at 10MB, 25MB, and 50MB document sizes; surfaced actionable insights around OpenSearch payload limits, indexing bottlenecks, and embedding latency that influenced platform architecture.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">OpenSearch</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Performance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">Reply Suggestions Feature</p>
+              <p class="portfolio-description">
+                Designed and implemented the Reply Suggestions feature within two weeks of joining, delivering critical infrastructure and CI/CD enhancements for ClioCon 2024. Enhanced observability with comprehensive metrics and asynchronous logging infrastructure.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">CI/CD</span>
+                <span class="tag">Fast Delivery</span>
+                <span class="tag">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">Suggested Query ML Feature</p>
+              <p class="portfolio-description">
+                Led end-to-end development of Suggested Query feature from hackathon prototype to 2025 roadmap. Built contextual questions and follow-ups using OpenAI infrastructure, including technical requirements, architecture design, and cross-team coordination.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">OpenAI</span>
+                <span class="tag">ML</span>
+                <span class="tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">Asynchronous Logging Infrastructure</p>
+              <p class="portfolio-description">
+                Built infrastructure for asynchronous logging by creating a process to write inference logs and developing a RedactionClient to handle inference dump data, improving system observability and data processing capabilities.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">Infrastructure</span>
+                <span class="tag">Observability</span>
+                <span class="tag">Logging</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">RAG Development Optimization</p>
+              <p class="portfolio-description">
+                Improved local RAG development by implementing SNS and SQS queues, reducing dev/prod infrastructure load. Created isolated development setups for better testing efficiency and enhanced error handling for password-protected documents and Textract failures.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">AWS SNS/SQS</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">EKS Cluster Upgrades & Infrastructure</p>
+              <p class="portfolio-description">
+                Executed successful EKS cluster upgrades twice, ensured environment reliability, and enabled new Kubernetes features through collaboration with Platform Engineering. Improved production resiliency by resolving RDS timeout and duplicate QnA issues.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">EKS</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
+              <p class="portfolio-title">GitOps and ITOps Automation</p>
+              <p class="portfolio-description">
+                Initiated GitOps and ITOps automation using n8n, preparing comprehensive proposals for process optimization. Authored documentation for Document Analyzer V2 including class diagrams, folder structure, and established Team Wiki and Release Management Strategy.
+              </p>
+              <div class="portfolio-tags">
+                <span class="tag">GitOps</span>
+                <span class="tag">Automation</span>
+                <span class="tag">n8n</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-text-box">
               <p class="portfolio-title">Intelligent Data Mapper</p>
               <p class="portfolio-description">
                 Developed Intelligent Mapper module using Azure OpenAI LLM's to map data from medical devices to industry standard medical languages such as FHIR, IHE.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">Azure OpenAI</span>
+                <span class="tag">LLM</span>
+                <span class="tag">Healthcare</span>
+              </div>
             </div>
           </div>
 
@@ -382,6 +683,11 @@
               <p class="portfolio-description">
                 Developed Automated test cases generation module using Azure OpenAI LLM's to promote Test Driven Development.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">Azure OpenAI</span>
+                <span class="tag">TDD</span>
+                <span class="tag">Automation</span>
+              </div>
             </div>
           </div>
 
@@ -389,8 +695,13 @@
             <div class="portfolio-text-box">
               <p class="portfolio-title">Prior Authorization Workflow Optimization</p>
               <p class="portfolio-description">
-                Integrated Generative-AI using Azure OpenAI LLM’s into Prior Authorization Work-flow module.
+                Integrated Generative-AI using Azure OpenAI LLM's into Prior Authorization Work-flow module.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">Azure OpenAI</span>
+                <span class="tag">GenAI</span>
+                <span class="tag">Healthcare</span>
+              </div>
             </div>
           </div>
 
@@ -400,6 +711,11 @@
               <p class="portfolio-description">
                 Extract data from patient scorecard and map to ICD-10-CM mapping using complex NLP based entity recognition models and deep learning models.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">NLP</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Healthcare</span>
+              </div>
             </div>
           </div>
 
@@ -409,6 +725,11 @@
               <p class="portfolio-description">
                 Designed MLOps pipeline and implmented Model Training, Model Registry, Test Bed and Model Deployment
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">MLOps</span>
+                <span class="tag">Model Registry</span>
+                <span class="tag">Python</span>
+              </div>
             </div>
           </div>
           <div class="portfolio-card">
@@ -417,6 +738,11 @@
               <p class="portfolio-description">
                 Framework to streamline the development to deployment lifecycle for Ophthalmalogy based ML Models to gain faster time to operationalization.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">MLOps</span>
+                <span class="tag">Healthcare</span>
+                <span class="tag">Framework</span>
+              </div>
             </div>
             <!-- <div class="portfolio-button-area">
               <a href="datascalp.html" class="portfolio-btn">Details &rarr;</a>
@@ -429,10 +755,12 @@
                 A driver developed to import. read and write data using SOAP protocol having the server-client
                 architecture.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">SOAP</span>
+                <span class="tag">Driver</span>
+                <span class="tag">IoT</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="proshop.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
 
           <div class="portfolio-card">
@@ -442,10 +770,12 @@
                 Developed Alexa skill for Niagara framework using AWS MQTT service to allows users to query/set
                 different parameters of a space in a building.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">AWS</span>
+                <span class="tag">MQTT</span>
+                <span class="tag">IoT</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="purchaseManagement.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
 
           <div class="portfolio-card">
@@ -454,12 +784,14 @@
               <p class="portfolio-description">
                 Upgraded a reporting tool which used the client-server architecture to download the EMS
                 (Environmental Monitoring System) data points such as temperatures, humidity, generator fuel
-                levels, SLA’s and plot accordingly in Microsoft Excel using VBA.
+                levels, SLA's and plot accordingly in Microsoft Excel using VBA.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">VBA</span>
+                <span class="tag">Excel</span>
+                <span class="tag">Reporting</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="devconnect.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
 
           <div class="portfolio-card">
@@ -470,10 +802,12 @@
                 including basic charts. Financial charts, Statistical charts, Maps, 3D charts and so on. First of
                 its kind in Niagara framework.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">Plotly</span>
+                <span class="tag">Widget</span>
+                <span class="tag">Visualization</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="omnifood.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
 
           <div class="portfolio-card">
@@ -484,10 +818,12 @@
                 import data from InfluxDB to Niagara and export data from Niagara to Influxdb since both
                 of them are used as time-series database.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">InfluxDB</span>
+                <span class="tag">Time-Series</span>
+                <span class="tag">Driver</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="kailashCoating.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
 
           <div class="portfolio-card">
@@ -499,10 +835,12 @@
                 design such as heartbeat, NTP sync, approximately 10,000 points JSON cache, close to real
                 time update and so on.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">JSON</span>
+                <span class="tag">BMS</span>
+                <span class="tag">Real-time</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="kailashCoating.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
           <div class="portfolio-card">
             <div class="portfolio-text-box">
@@ -512,10 +850,12 @@
                 and Google Maps API to provide live navigation/location data which was used for
                 environment monitoring.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">GPS</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Google Maps</span>
+              </div>
             </div>
-            <!-- <div class="portfolio-button-area">
-              <a href="kailashCoating.html" class="portfolio-btn">Details &rarr;</a>
-            </div> -->
           </div>
           <div class="portfolio-card">
             <div class="portfolio-text-box">
@@ -527,7 +867,14 @@
                 calendar plug-ins, Jenkins, Ansible for CI and CD. Deployed the application on cloud as well
                 as on premises using Docker containers, lets encrypt for SSL verification and NO-IP for DNS.
               </p>
+              <div class="portfolio-tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">Ansible</span>
+                <span class="tag">CI/CD</span>
+              </div>
             </div>
+          </div>
             <!-- <div class="portfolio-button-area">
               <a href="kailashCoating.html" class="portfolio-btn">Details &rarr;</a>
             </div> -->
@@ -536,86 +883,188 @@
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <div class="mycontainer">
-      <div id="experience" class="mycontent" style="background-color: teal; color: white;">
-        <h1 style="padding: 20px;">Work Experience</h1>
-        <ul>
-          <li style="--accent-color:green">
-            <div class="date">October 2023 - Present</div>
-            <div class="title">Technical Lead - 1 - AI Solutions Architect</div>
-            <div class="descr">CitiusTech Healthcare Technology Pvt Ltd.</div>
-          </li>
-          <li style="--accent-color:#41516C">
-            <div class="date">March 2022 - September 2023</div>
-            <div class="title">Senior Software Engineer - AI Engineer</div>
-            <div class="descr">CitiusTech Healthcare Technology Pvt Ltd.</div>
-          </li>
-          <li style="--accent-color:#FBCA3E">
-            <div class="date">July 2020 - January 2022</div>
-            <div class="title">Software Developer</div>
-            <div class="descr">Baudrate.IO</div>
-          </li>
-          <li style="--accent-color:#E24A68">
-            <div class="date">June 2018 - June 2020</div>
-            <div class="title">Software Engineer</div>
-            <div class="descr">Leanovate Info Solutions Pvt Ltd.</div>
-          </li>
-          <li style="--accent-color:maroon">
-            <div class="date">September 2017 - May 2018</div>
-            <div class="title">Technical Architect Intern</div>
-            <div class="descr">Leanovate Info Solutions Pvt Ltd.</div>
-          </li>
-          <li style="--accent-color:lightseagreen">
-            <div class="date">July 2017 - August 2017</div>
-            <div class="title">Rapid Prototyping Intern</div>
-            <div class="descr">Just Practicals!</div>
-          </li>
-          <li style="--accent-color:steelblue">
-            <div class="date">October 2016 - September 2017</div>
-            <div class="title">Microcontroller Intern</div>
-            <div class="descr">Ellipsonic</div>
-          </li>
-        </ul>
-      </div>
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h1 class="experience-heading">Work Experience</h1>
+        <div class="experience-grid">
+          <div class="experience-card current">
+            <div class="experience-date">August 2024 - Present</div>
+            <div class="experience-title">Intermediate MLOps Engineer</div>
+            <div class="experience-company">Clio</div>
+            <span class="experience-badge">Current</span>
+          </div>
 
-      <div id="education" class="mycontent" style="background-color:teal; color: white;">
-        <h1 style="padding: 20px;">Education</h1>
-          <ul>
-            <li style="--accent-color:steelblue">
-              <div class="date">October 2023 - October 2026</div>
-              <div class="title">AWS</div>
-              <div class="descr">AWS Solutions Architect Associate</div>
-              <div class="descr">Percentage - 75%</div>
-              <div class="descr"></div>
-            </li>
-            <li style="--accent-color:#41516C">
-              <div class="date">November 2021 - April 2023</div>
-              <div class="title">Liver Pool John Moores University</div>
-              <div class="descr">MS in Computer Science</div>
-              <div class="descr">Percentage - 71% - Distinction</div>
-              <div class="descr">Liverpool, UK</div>
-            </li>
-            <li style="--accent-color:#FBCA3E">
-              <div class="date">September 2020 - November 2021</div>
-              <div class="title">International Institute of Information Technology</div>
-              <div class="descr">Software Development specializing in Cloud Computing</div>
-              <div class="descr">CGPA - 3.72/4.00</div>
-              <div class="descr">Bengaluru, Karnataka, India</div>
-            </li>
-            <li style="--accent-color:#E24A68">
-              <div class="date">August 2014 - June 2018</div>
-              <div class="title">BMS College of Engineering - Autonomous VTU University</div>
-              <div class="descr">Information Science and Engineering</div>
-              <div class="descr">CGPA - First Class - 7.70/10</div>
-              <div class="descr">Bengaluru, Karnataka, India</div>
-            </li>
-          </ul>
-      </div>
-    </div>
+          <div class="experience-card">
+            <div class="experience-date">October 2023 - July 2024</div>
+            <div class="experience-title">Technical Lead - 1</div>
+            <div class="experience-role">AI Solutions Architect</div>
+            <div class="experience-company">CitiusTech Healthcare Technology Pvt Ltd.</div>
+          </div>
 
-    </div>
-    </div>
+          <div class="experience-card">
+            <div class="experience-date">March 2022 - September 2023</div>
+            <div class="experience-title">Senior Software Engineer</div>
+            <div class="experience-role">AI Engineer</div>
+            <div class="experience-company">CitiusTech Healthcare Technology Pvt Ltd.</div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-date">July 2020 - January 2022</div>
+            <div class="experience-title">Software Developer</div>
+            <div class="experience-company">Baudrate.IO</div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-date">June 2018 - June 2020</div>
+            <div class="experience-title">Software Engineer</div>
+            <div class="experience-company">Leanovate Info Solutions Pvt Ltd.</div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-date">September 2017 - May 2018</div>
+            <div class="experience-title">Technical Architect Intern</div>
+            <div class="experience-company">Leanovate Info Solutions Pvt Ltd.</div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-date">July 2017 - August 2017</div>
+            <div class="experience-title">Rapid Prototyping Intern</div>
+            <div class="experience-company">Just Practicals!</div>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-date">October 2016 - September 2017</div>
+            <div class="experience-title">Microcontroller Intern</div>
+            <div class="experience-company">Ellipsonic</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <h1 class="education-heading">Education</h1>
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="education-date">November 2021 - April 2023</div>
+            <div class="education-institution">Liverpool John Moores University</div>
+            <div class="education-degree">MS in Computer Science</div>
+            <div class="education-details">Percentage: 71% - Distinction</div>
+            <div class="education-location">Liverpool, UK</div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-date">September 2020 - November 2021</div>
+            <div class="education-institution">International Institute of Information Technology</div>
+            <div class="education-degree">Post Graduate in Software Development</div>
+            <div class="education-details">Specialization: Cloud Computing</div>
+            <div class="education-details">CGPA: 3.72/4.00</div>
+            <div class="education-location">Bengaluru, Karnataka, India</div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-date">August 2014 - June 2018</div>
+            <div class="education-institution">BMS College of Engineering</div>
+            <div class="education-degree">Autonomous VTU University</div>
+            <div class="education-details">Information Science and Engineering</div>
+            <div class="education-details">CGPA: 7.70/10 - First Class</div>
+            <div class="education-location">Bengaluru, Karnataka, India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+      <div class="container">
+        <h1 class="certifications-heading">Certifications</h1>
+        
+        <div class="certifications-grid">
+          <!-- 2025 -->
+          <div class="certification-year-group">
+            <h2 class="certification-year">2025</h2>
+            <div class="certification-card in-progress">
+              <div class="certification-badge">In Progress</div>
+              <div class="certification-title">Databricks Generative AI Engineer</div>
+              <div class="certification-provider">Databricks</div>
+            </div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="certification-year-group">
+            <h2 class="certification-year">2024</h2>
+            <div class="certification-card">
+              <div class="certification-title">Generative AI with LLM's</div>
+              <div class="certification-provider">Deeplearning.AI and AWS</div>
+            </div>
+            <div class="certification-card">
+              <div class="certification-title">LangChain for LLM Application Development</div>
+              <div class="certification-provider">DeepLearning.AI</div>
+            </div>
+            <div class="certification-card">
+              <div class="certification-title">Finetuning Large Language Models</div>
+              <div class="certification-provider">DeepLearning.AI</div>
+            </div>
+            <div class="certification-card">
+              <div class="certification-title">Prompt Engineering for ChatGPT</div>
+              <div class="certification-provider">Vanderbilt University</div>
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="certification-year-group">
+            <h2 class="certification-year">2023</h2>
+            <div class="certification-card featured">
+              <div class="certification-badge featured-badge">AWS Certified</div>
+              <div class="certification-title">AWS Solutions Architect Associate</div>
+              <div class="certification-provider">Amazon Web Services</div>
+              <div class="certification-score">Score: 75%</div>
+            </div>
+          </div>
+
+          <!-- 2022 -->
+          <div class="certification-year-group">
+            <h2 class="certification-year">2022</h2>
+            <div class="certification-card">
+              <div class="certification-title">Complete Data Science Bootcamp</div>
+              <div class="certification-provider">Udemy</div>
+            </div>
+            <div class="certification-card">
+              <div class="certification-title">Developing and Deploying ML Models in Production</div>
+              <div class="certification-provider">Udemy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards and Honors Section -->
+    <section id="awards" class="awards-section">
+      <div class="container">
+        <h1 class="awards-heading">Awards & Honors</h1>
+        <div class="awards-grid">
+          <div class="award-card">
+            <div class="award-icon">🏆</div>
+            <div class="award-year">2023</div>
+            <div class="award-title">Certificate of Appreciation</div>
+            <div class="award-company">CitiusTech Healthcare Technology</div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon">⭐</div>
+            <div class="award-year">2022</div>
+            <div class="award-title">Recognition & Rewards</div>
+            <div class="award-company">CitiusTech Healthcare Technology</div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon">🎖️</div>
+            <div class="award-year">2022</div>
+            <div class="award-title">iAppreciate</div>
+            <div class="award-company">CitiusTech Healthcare Technology</div>
+          </div>
+        </div>
+      </div>
     </section>
 <!-- 
     <section>
@@ -678,7 +1127,7 @@
   </section> -->
 
     <!-- Section CTA -->
-    <section class="section-cta" id="section-cta" style="margin-top: 15%;">
+    <section class="section-cta" id="section-cta">
       <div class="container grid grid-col-2">
         <div class="cta-text-box">
           <span class="cta-subheading">Have some questions?</span>
@@ -765,6 +1214,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+
   <script src="js/index.js"></script>
   <script src="js/timeline.js"></script>
   <script src="js/imageViewer.js"></script>
