@@ -6,26 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {%- seo -%}
   <link rel="icon" type="image/png" href="/img/favicon.ico" />
+  <!-- Portfolio's own stylesheets, loaded so blog pages match the site chrome -->
+  <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/general.css" />
-  <link rel="stylesheet" href="/css/queries.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/indexQuery.css" />
+  <link rel="stylesheet" href="/css/drop_down.css" />
+  <link rel="stylesheet" href="/css/enhancements.css" />
+  <!-- Blog / projects / learning specifics -->
   <link rel="stylesheet" href="/css/blog.css" />
+  <link rel="stylesheet" href="/css/learning.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
   {%- feed_meta -%}
 </head>
-<body class="blog-body">
-  {% include blog-header.html %}
-  <main class="blog-main">
-    {{ content }}
-  </main>
-  <footer class="blog-footer">
-    <div class="blog-footer-inner">
-      <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}.
-        <a href="/">← Portfolio</a> ·
-        <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
-        <a href="{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a> ·
-        <a href="/feed.xml">RSS</a>
-      </p>
+<body>
+  {% include site-nav.html %}
+  <main class="page-main">
+    <div class="page-container">
+      {{ content }}
     </div>
-  </footer>
+  </main>
+  {% include site-footer.html %}
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+  <script src="/js/index.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </body>

@@ -96,60 +96,7 @@ layout: null
 </head>
 
 <body>
-  <header class="header">
-    <a class="logo-link" href="index.html">
-      <p class="temp-logo">Vaithianathan Ramnarayan</p>
-    </a>
-    <button class="btn-mobile">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-    </button>
-    <nav class="main-nav">
-      <button class="btn-mobile-nav">
-        <!-- <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon> -->
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-      <ul class="main-nav-list">
-        <li>
-          <a href="#section-about-me" class="main-nav-link">About Me</a>
-        </li>
-        <li>
-          <a href="#section-skills" class="main-nav-link">Skills</a>
-        </li>
-        <li>
-          <a href="#section-portfolio" class="main-nav-link">Portfolio</a>
-        </li>
-        <li>
-          <a href="/projects/" class="main-nav-link">Projects</a>
-        </li>
-        <li>
-          <a href="/blog/" class="main-nav-link">Blog</a>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a href="#experience" class="main-nav-link">Work Experience</a>
-            <!-- <div class="dropdown-content" style="background-color: teal;">
-              <a href="" class="main-nav-link" style="font-size:100%;">Appreciations</a>
-            </div> -->
-          </div>
-        </li>
-        <li>
-          <a href="#education" class="main-nav-link">Education</a>
-        </li>
-        <li>
-          <a href="#certifications" class="main-nav-link">Certifications</a>
-        </li>
-        <li>
-          <a href="#currently-studying" class="main-nav-link">Currently Studying</a>
-        </li>
-        <li>
-          <a href="#awards" class="main-nav-link">Awards</a>
-        </li>
-        <li>
-          <a href="#section-cta" class="nav-cta main-nav-link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  {% include site-nav.html %}
   <main>
     <!-- Section Hero -->
     <section class="section-hero" id="section-hero">
@@ -174,7 +121,7 @@ layout: null
             </div>
           </div>
           <div class="hero-buttons">
-            <a class="btn hero-btn" href="#section-cta">Contact Me</a>
+            <a class="btn hero-btn" href="/contact/">Contact Me</a>
             <a class="btn hero-btn-secondary" href="#section-portfolio">View Work</a>
           </div>
         </div>
@@ -195,48 +142,6 @@ layout: null
       </div>
     </section>
 
-    <!-- Section About Me -->
-    <section class="section-about-me" id="section-about-me">
-      <div class="container grid grid-col-1">
-        <!-- <div class="images about-me-img-box">
-          <img id="techStack" src="img/fotor-ai-2023062113019.jpg" alt="about me image" />
-        </div>
-        <div id="image-viewer">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="full-image">
-        </div> -->
-        <div class="about-me-text-box">
-          <span class="subheading">About Me</span>
-          <h2 class="heading-secondary">
-            Empowering AI solutions from prototype to production
-          </h2>
-          <p class="about-me-text">
-            Results-driven MLOps Engineer with 7 years of software engineering experience and 3+ years specializing in production ML systems, GenAI platforms, and cloud infrastructure. My mission is to drive technological innovation by building robust, scalable AI solutions that deliver real-world impact for enterprises.
-          </p>
-          <p class="about-me-text">
-            As an Intermediate MLOps Engineer at Clio and former Technical Lead (AI Solutions Architect) at CitiusTech, I've architected and deployed scalable ML pipelines, RAG-enabled AI features, and multi-region GenAI platforms across healthcare and legal domains. My expertise includes AWS (SageMaker, EKS), Azure OpenAI, Terraform, Kubernetes, DataDog, OpenTelemetry, and integrating LLMs within production infrastructure.
-          </p>
-          <p class="about-me-text">
-            Delivered projects that reduced ML deployment times by 40%, optimized cloud infrastructure by 50%, and enabled observability and compliance for enterprise AI systems.
-          </p>
-          <p class="about-me-text">
-            Specialized in designing end-to-end solutions: from real-time ML workflows in healthcare and legal tech, to comprehensive monitoring and robust security for global deployments.
-          </p>
-          <p class="about-me-text">
-            Skilled in translating ambiguous requirements into production-ready systems, leveraging T-shaped skills—high-level architecture vision combined with deep technical execution.
-          </p>
-          <p class="about-me-text">
-            My academic foundation includes an MS in Computer Science from Liverpool John Moores University, UK, and a PG degree from IIIT Bangalore. I hold certifications in AWS Solutions Architecture, Data Science, and more. Driven by continuous learning, cross-team collaboration, and a hands-on approach, I constantly explore new technologies to solve complex business challenges.
-          </p>
-          <p class="about-me-text">
-            If you're seeking an AI engineer who can bridge business needs and technical execution, and who's passionate about impactful, innovative solutions—let's connect!
-          </p>
-          <p class="about-me-text">
-            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=srnath96@gmail.com&amp;su=Portfolio%20Contact" target="_blank" rel="noopener noreferrer" style="color: #339af0; text-decoration: none;">📧 srnath96@gmail.com</a>
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- Section Metrics/Achievements -->
     <section class="section-metrics" id="section-metrics">
@@ -1207,93 +1112,10 @@ layout: null
   </section> -->
 
     <!-- Section CTA -->
-    <section class="section-cta" id="section-cta">
-      <div class="container grid grid-col-2">
-        <div class="cta-text-box">
-          <span class="cta-subheading">Have some questions?</span>
-          <div>
-            <div class="cta-lets">
-              <h2 class="cta-heading">let's</h2>
-            </div>
-            <div class="cta-talk">
-              <h2 class="cta-heading">talk</h2>
-            </div>
-          </div>
-        </div>
-        <div class="cta-form-box">
-          <form class="cta-form" action="https://formsubmit.co/ec6c04c456d88ce17d9834a53a7157c4" method="POST"
-            id="contactForm">
-            <div class="form-element">
-              <label for="full-name">Name</label>
-              <input type="text" placeholder="Your Name" name="name" required />
-            </div>
-
-            <div>
-              <label for="email">Email address</label>
-              <input type="email" placeholder="me@example.com" name="email" required />
-            </div>
-            <div>
-              <label for="contact">Contact Number</label>
-              <input type="number" placeholder="+91 1234 567 890" name="contact" />
-            </div>
-            <label for="message">Message</label>
-            <textarea placeholder="Your Message" rows="3" name="message" form="contactForm"></textarea>
-            <input type="hidden" name="_next" value="https://ramnarayan3015.github.io/" />
-            <button class="form-btn">Hit me up</button>
-          </form>
-        </div>
-      </div>
-    </section>
   </main>
 
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="wave">
-      <div class="custom-shape-divider-bottom-1652512758">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"></path>
-        </svg>
-      </div>
-    </div>
-    <div class="section-footer">
-      <div class="container flex">
-        <div class="footer-logo-box">
-          <p class="footer-temp-logo" style="color: white;">Vaithianathan Ramnarayan</p>
-        </div>
-        <div class="footer-text-box">
-          <div class="footer-grid">
-            <div>
-              <h3 class="heading-tertiary" style="color: white;">Resources</h3>
-              <div class="footer-link-box">
-                <a class="footer-link" href="https://github.com/ramnarayan3015" style="color: white;">
-                  <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-                <a class="footer-link"
-                  href="https://drive.google.com/file/d/1lFILbVkkzic_QgLF-074wJF1rpnXM08E/view?usp=sharing"
-                  style="color: white;">
-                  <ion-icon name="document-outline"></ion-icon> Resume
-                </a>
-              </div>
-            </div>
-            <div>
-              <h3 class="heading-tertiary" style="color: white;">Find me on</h3>
-              <div class="footer-link-box">
-                <a class="footer-link" href="https://www.linkedin.com/in/ramnarayan-v-ai-ml-mlops-engineer/" target="_blank" rel="noopener noreferrer" style="color: white;">
-                  <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
-                </a>
-                <a class="footer-link" href="https://www.instagram.com/shivaram3015/" style="color: white;">
-                  <ion-icon name="logo-instagram"></ion-icon> Instagram
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include site-footer.html %}
 
   <!-- Back to Top Button -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top">
