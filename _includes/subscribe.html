@@ -1,0 +1,24 @@
+{% comment %}
+  Set site.buttondown_username in _config.yml once your Buttondown account
+  is set up. Until then the form falls back to an RSS-only affordance.
+{% endcomment %}
+<div class="subscribe">
+  <h3>Get new posts by email</h3>
+  {% if site.buttondown_username %}
+    <p class="subscribe-lede">Double opt-in. Unsubscribe any time. No spam.</p>
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/{{ site.buttondown_username }}"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/{{ site.buttondown_username }}', 'popupwindow')"
+      class="embeddable-buttondown-form">
+      <label for="bd-email" class="sr-only">Email</label>
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required />
+      <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+    <p class="rss-fallback">Prefer RSS? <a href="/feed.xml">Subscribe via RSS</a>.</p>
+  {% else %}
+    <p class="subscribe-lede">Email subscriptions coming soon.</p>
+    <p class="rss-fallback">For now — <a href="/feed.xml">subscribe via RSS</a>.</p>
+  {% endif %}
+</div>

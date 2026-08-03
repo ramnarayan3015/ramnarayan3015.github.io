@@ -1,0 +1,43 @@
+title: "Vaithianathan Ramnarayan"
+tagline: "MLOps Engineer — production AI systems, GenAI platforms, cloud infrastructure."
+description: >
+  Personal site and blog of Vaithianathan Ramnarayan, MLOps Engineer.
+  Notes on production ML, GenAI platforms, and cloud infrastructure.
+author:
+  name: "Vaithianathan Ramnarayan"
+  email: "srnath96@gmail.com"
+  linkedin: "https://www.linkedin.com/in/ramnarayan-v-ai-ml-mlops-engineer/"
+  github:   "https://github.com/ramnarayan3015"
+
+url: "https://ramnarayan3015.github.io"
+baseurl: ""
+timezone: America/Toronto
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
+permalink: /blog/:year/:month/:slug/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs/
+  - node_modules/
+  - vendor/
+  - .jekyll-cache/
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post

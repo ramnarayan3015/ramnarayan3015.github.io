@@ -1,0 +1,48 @@
+# Currently Studying — Ram-authored. One entry per credential or track.
+# Required: name, issuer, status
+# Optional: started_date, expected_completion, url, notes
+# status: in-progress | planned | completed
+# Dates: ISO-8601 YYYY-MM-DD
+#
+# When you finish a credential:
+#   1. Flip status → completed (keep briefly for a "recently completed" tail)
+#   2. Add a matching entry to the Certifications section in index.html
+#   3. Delete from here after ~30 days
+
+- name: "AWS Certified Generative AI Developer – Professional"
+  issuer: AWS
+  status: in-progress
+  started_date: 2026-07-01
+  expected_completion: 2026-10-15
+  url: https://aws.amazon.com/certification/certified-generative-ai-developer/
+  notes: "Prereq: AI Practitioner (done) + ML Engineer Associate (in-progress)."
+
+- name: "NVIDIA-Certified Associate: Generative AI and LLMs (NCA-GENL)"
+  issuer: NVIDIA
+  status: in-progress
+  expected_completion: 2026-09-01
+  url: https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/
+  notes: "TODO confirm — also pursuing NCP-AIO / NCP-LLM Professional tier?"
+
+- name: "Microsoft Certified: Azure AI App and Agent Developer Associate (AI-103)"
+  issuer: Microsoft
+  status: planned
+  notes: "Successor to retired AI-102 (June 2026)."
+
+- name: "Databricks Certified Generative AI Engineer Associate"
+  issuer: Databricks
+  status: planned
+
+- name: "AI Fluency: Framework & Foundations"
+  issuer: Anthropic
+  status: in-progress
+  url: https://anthropic.com/learn
+  notes: "Free Anthropic Academy course. TODO confirm — also targeting Claude Certified Architect exam?"
+
+- name: "System Design (ByteByteGo)"
+  issuer: ByteByteGo
+  status: in-progress
+  notes: "Ongoing subscription — Alex Xu's course + newsletter."
+
+# TODO: pick the Udemy AI Engineer course to add here — Ed Donner's
+# 'LLM Engineering: Master AI, LLMs & Agents' or a fuller AI Engineer Bootcamp.

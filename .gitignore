@@ -1,5 +1,11 @@
 /temp
 /.vscode
+/_site
+/.jekyll-cache
+/.jekyll-metadata
+/vendor
+/Gemfile.lock
+/.bundle
 /img/devconnect/archive
 /img/hero/archive
 /img/kailashCoating/archive

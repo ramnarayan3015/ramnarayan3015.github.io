@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,6 +92,7 @@
     ]
   }
   </script>
+  <link rel="stylesheet" href="/css/learning.css" />
 </head>
 
 <body>
@@ -115,6 +119,12 @@
           <a href="#section-portfolio" class="main-nav-link">Portfolio</a>
         </li>
         <li>
+          <a href="/projects/" class="main-nav-link">Projects</a>
+        </li>
+        <li>
+          <a href="/blog/" class="main-nav-link">Blog</a>
+        </li>
+        <li>
           <div class="dropdown">
             <a href="#experience" class="main-nav-link">Work Experience</a>
             <!-- <div class="dropdown-content" style="background-color: teal;">
@@ -127,6 +137,9 @@
         </li>
         <li>
           <a href="#certifications" class="main-nav-link">Certifications</a>
+        </li>
+        <li>
+          <a href="#currently-studying" class="main-nav-link">Currently Studying</a>
         </li>
         <li>
           <a href="#awards" class="main-nav-link">Awards</a>
@@ -883,6 +896,39 @@
       </div>
     </section>
 
+    <!-- Recent Writing Teaser -->
+    <section id="section-writing" class="section-writing" style="padding: 6.4rem 0; background: linear-gradient(180deg, #12253c 0%, #1a2f47 100%);">
+      <div class="container" style="max-width: 96rem; margin: 0 auto; padding: 0 3.2rem;">
+        <span class="subheading" style="display:block; font-size:1.4rem; font-weight:700; color:#6cb2eb; text-transform:uppercase; letter-spacing:2px; margin-bottom:1.2rem;">From the Blog</span>
+        <h2 class="heading-secondary" style="font-size:3.6rem; font-weight:700; color:#fff; margin:0 0 2.4rem 0; letter-spacing:-0.5px;">
+          Recent Writing
+        </h2>
+        {% assign recent_posts = site.posts | slice: 0, 3 %}
+        {% if recent_posts.size > 0 %}
+          <div class="writing-list" style="display:flex; flex-direction:column; gap:1.6rem;">
+            {% for post in recent_posts %}
+              <a class="writing-card" href="{{ post.url | relative_url }}"
+                 style="display:block; padding:2rem 2.4rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:0.8rem; text-decoration:none; color:inherit; transition:border-color 0.2s ease, background 0.2s ease;">
+                <h3 style="font-size:1.9rem; font-weight:700; color:#fff; margin:0 0 0.4rem 0;">{{ post.title }}</h3>
+                <p style="color:#9aa7b5; font-size:1.3rem; margin:0 0 0.8rem 0;">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                  {%- if post.tags and post.tags.size > 0 -%}
+                    · {% for tag in post.tags %}<span style="color:#6cb2eb; font-weight:600;">#{{ tag }}</span>{% unless forloop.last %} {% endunless %}{% endfor %}
+                  {%- endif -%}
+                </p>
+                {% if post.excerpt %}
+                  <p style="color:#cbd5e0; font-size:1.5rem; margin:0; line-height:1.6;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+                {% endif %}
+              </a>
+            {% endfor %}
+          </div>
+          <p style="margin-top:2.4rem;"><a href="/blog/" style="color:#6cb2eb; text-decoration:none; font-size:1.5rem;">All posts →</a></p>
+        {% else %}
+          <p style="color:#9aa7b5;">First post coming soon. <a href="/feed.xml" style="color:#6cb2eb;">Subscribe via RSS</a> to be notified.</p>
+        {% endif %}
+      </div>
+    </section>
+
     <!-- Work Experience Section -->
     <section id="experience" class="experience-section">
       <div class="container">
@@ -1037,6 +1083,40 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Currently Studying Section -->
+    <section id="currently-studying" class="section-currently-studying">
+      <div class="container">
+        <span class="subheading">Currently Studying</span>
+        <h2 class="heading-secondary">What I'm investing in right now</h2>
+        {% if site.data.learning and site.data.learning.size > 0 %}
+          <ul class="learning-list">
+            {% for item in site.data.learning %}
+              {% assign icon = "📚" %}
+              {% if item.status == "in-progress" %}{% assign icon = "🚀" %}{% endif %}
+              {% if item.status == "completed" %}{% assign icon = "✅" %}{% endif %}
+              <li class="learning-item">
+                <span class="learning-icon" aria-hidden="true">{{ icon }}</span>
+                <div class="learning-body">
+                  <h3 class="learning-name">
+                    {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}
+                  </h3>
+                  <p class="learning-meta">
+                    <span class="learning-issuer">{{ item.issuer }}</span>
+                    {% if item.started_date %}<span class="sep">·</span>started {{ item.started_date | date: "%b %Y" }}{% endif %}
+                    {% if item.expected_completion %}<span class="sep">·</span>target {{ item.expected_completion | date: "%b %Y" }}{% endif %}
+                  </p>
+                  {% if item.notes %}<p class="learning-notes">{{ item.notes }}</p>{% endif %}
+                </div>
+                <span class="learning-status {{ item.status }}">{{ item.status | replace: "-", " " }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p style="color:#9aa7b5;">Nothing in the current-studying queue right now.</p>
+        {% endif %}
       </div>
     </section>
 

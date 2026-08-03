@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="blog-index">
+  <header class="blog-index-header">
+    <h1>{{ page.title | default: "Blog" }}</h1>
+    {%- if page.subtitle -%}<p class="blog-index-subtitle">{{ page.subtitle }}</p>{%- endif -%}
+  </header>
+
+  <div class="blog-index-content">
+    {{ content }}
+  </div>
+
+  {% if site.posts.size == 0 %}
+    <p class="blog-empty">No posts yet — check back soon.</p>
+  {% else %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% include subscribe.html %}
+</section>
