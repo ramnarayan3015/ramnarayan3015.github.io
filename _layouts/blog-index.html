@@ -2,10 +2,10 @@
 layout: default
 ---
 <section class="blog-index">
-  <header class="blog-index-header">
+  <div class="blog-index-header">
     <h1>{{ page.title | default: "Blog" }}</h1>
     {%- if page.subtitle -%}<p class="blog-index-subtitle">{{ page.subtitle }}</p>{%- endif -%}
-  </header>
+  </div>
 
   <div class="blog-index-content">
     {{ content }}
