@@ -1,52 +1,109 @@
 ---
 layout: default
 permalink: /projects/
-title: "Personal Projects"
-description: "Personal experiments, side projects, and open-source work by Vaithianathan Ramnarayan."
+title: "Projects"
+description: "Professional and personal projects by Vaithianathan Ramnarayan — production ML systems, side projects, and open-source work."
 ---
-<link rel="stylesheet" href="/css/projects.css" />
+<link rel="stylesheet" href="/css/projects.css?v={{ site.time | date: '%s' }}" />
 <section class="projects">
   <header class="projects-header">
-    <h1>Personal Projects</h1>
-    <p class="projects-lede">
-      Experiments, side projects, and open-source work. Distinct from the
-      <a href="/portfolio/#section-portfolio">professional portfolio</a> — this is what
-      I build on my own time.
-    </p>
+    <h1>Projects</h1>
+    <p class="projects-lede">Work I've built — professionally and on my own time.</p>
   </header>
 
-  {% if site.data.projects and site.data.projects.size > 0 %}
-    <div class="projects-list">
-      {% for project in site.data.projects %}
-        <article class="project-card" id="{{ project.slug }}">
-          {% if project.image %}
-            <div class="project-image">
-              <img src="{{ project.image }}" alt="{{ project.title }} screenshot" loading="lazy" />
-            </div>
-          {% endif %}
-          <h2 class="project-title">{{ project.title }}</h2>
-          <p class="project-description">{{ project.description }}</p>
-          {% if project.stack and project.stack.size > 0 %}
-            <p class="project-stack">
-              <span class="project-stack-label">Stack:</span>
-              {% for tech in project.stack %}<span class="project-stack-item">{{ tech }}</span>{% unless forloop.last %} · {% endunless %}{% endfor %}
-            </p>
-          {% endif %}
-          <div class="project-actions">
-            {% if project.live_url %}
-              <a class="project-btn project-btn-live" href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer">Live ↗</a>
-            {% endif %}
-            <a class="project-btn project-btn-github" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
-            {% if project.docs_url %}
-              <a class="project-btn project-btn-docs" href="{{ project.docs_url }}" target="_blank" rel="noopener noreferrer">Docs</a>
-            {% endif %}
-          </div>
-        </article>
-      {% endfor %}
+  <!-- Professional / Office -->
+  <div class="projects-category">
+    <div class="projects-category-meta">
+      <span class="projects-badge projects-badge--office">Professional</span>
+      <h2 class="projects-category-title">Office Projects</h2>
+      <p class="projects-category-desc">Production systems and platforms built in a professional setting.</p>
     </div>
-  {% else %}
-    <p class="projects-empty">No projects listed yet.</p>
-  {% endif %}
 
-  <p class="projects-cross"><a href="/portfolio/#section-portfolio">See professional work →</a></p>
+    {% if site.data.office_projects and site.data.office_projects.size > 0 %}
+      <div class="projects-list">
+        {% for project in site.data.office_projects %}
+          <article class="project-card" id="{{ project.slug }}">
+            {% if project.image %}
+              <div class="project-image">
+                <img src="{{ project.image }}" alt="{{ project.title }} screenshot" loading="lazy" />
+              </div>
+            {% endif %}
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            {% if project.stack and project.stack.size > 0 %}
+              <p class="project-stack">
+                <span class="project-stack-label">Stack:</span>
+                {% for tech in project.stack %}<span class="project-stack-item">{{ tech }}</span>{% unless forloop.last %} · {% endunless %}{% endfor %}
+              </p>
+            {% endif %}
+            <div class="project-actions">
+              {% if project.live_url %}
+                <a class="project-btn project-btn-live" href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer">Live ↗</a>
+              {% endif %}
+              {% if project.github_url %}
+                <a class="project-btn project-btn-github" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+              {% endif %}
+              {% if project.docs_url %}
+                <a class="project-btn project-btn-docs" href="{{ project.docs_url }}" target="_blank" rel="noopener noreferrer">Docs</a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="projects-empty-state">
+        <p>Case studies in progress — check back soon.</p>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="projects-divider"></div>
+
+  <!-- Personal -->
+  <div class="projects-category">
+    <div class="projects-category-meta">
+      <span class="projects-badge projects-badge--personal">Personal</span>
+      <h2 class="projects-category-title">Personal Projects</h2>
+      <p class="projects-category-desc">Side projects, experiments, and open-source work I build on my own time.</p>
+    </div>
+
+    {% if site.data.personal_projects and site.data.personal_projects.size > 0 %}
+      <div class="projects-list">
+        {% for project in site.data.personal_projects %}
+          <article class="project-card" id="{{ project.slug }}">
+            {% if project.image %}
+              <div class="project-image">
+                <img src="{{ project.image }}" alt="{{ project.title }} screenshot" loading="lazy" />
+              </div>
+            {% endif %}
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            {% if project.stack and project.stack.size > 0 %}
+              <p class="project-stack">
+                <span class="project-stack-label">Stack:</span>
+                {% for tech in project.stack %}<span class="project-stack-item">{{ tech }}</span>{% unless forloop.last %} · {% endunless %}{% endfor %}
+              </p>
+            {% endif %}
+            <div class="project-actions">
+              {% if project.live_url %}
+                <a class="project-btn project-btn-live" href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer">Live ↗</a>
+              {% endif %}
+              {% if project.github_url %}
+                <a class="project-btn project-btn-github" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+              {% endif %}
+              {% if project.docs_url %}
+                <a class="project-btn project-btn-docs" href="{{ project.docs_url }}" target="_blank" rel="noopener noreferrer">Docs</a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="projects-empty-state">
+        <p>No personal projects listed yet.</p>
+      </div>
+    {% endif %}
+  </div>
+
+  <p class="projects-cross"><a href="/portfolio/">See professional portfolio →</a></p>
 </section>
