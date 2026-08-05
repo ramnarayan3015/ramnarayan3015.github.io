@@ -1,5 +1,199 @@
 # Professional / office projects. Appears under "Professional" on /projects/.
 # Required: title, slug, description
-# Optional: stack, image, live_url, github_url, docs_url
+# Optional: stack, image, live_url, github_url, docs_url, featured (bool)
 #
-# Add entries here when ready to publish case studies.
+# Featured projects render with a badge and appear first — put them at the top.
+
+- title: "AI Citations and Summarization"
+  slug: ai-citations-summarization
+  featured: true
+  description: >
+    Architected and shipped high-impact features for Clio's legal platform, including
+    AI Citations and Summarization. Collaborated with cross-functional teams to design,
+    implement, and deploy scalable solutions that enhance document analysis capabilities.
+  stack: [AWS, GenAI, RAG, Python]
+
+- title: "Braintrust Data Plane Multi-Region"
+  slug: braintrust-multi-region
+  featured: true
+  description: >
+    Deployed Braintrust Data Plane to US, CA, AU, and EU regions with full observability
+    and RBAC. Implemented security best practices (Secrets Manager integration, access key
+    audits) and optimized infrastructure for significant cost savings.
+  stack: [AWS, Terraform, Kubernetes, Multi-Region]
+
+- title: "Multi-Layered Observability Platform"
+  slug: observability-platform
+  featured: true
+  description: >
+    Established multi-layered observability using OpenTelemetry and DataDog, standardizing
+    custom metric design, reducing monitoring costs, and delivering dashboards for near
+    real-time platform visibility across all services.
+  stack: [DataDog, OpenTelemetry, Observability, Metrics]
+
+- title: "Timeline Generation Feature"
+  slug: timeline-generation
+  description: >
+    End-to-end ownership of Timeline Generation feature: co-led design and ticket breakdown,
+    executed load testing, production deployment, and resolved critical pre-signed URL
+    expiration issue — maintaining seamless service integration with zero downtime.
+  stack: [AWS, Load Testing, Zero Downtime]
+
+- title: "RAG Index Pipeline Benchmarking"
+  slug: rag-pipeline-benchmarking
+  description: >
+    Spearheaded RAG index pipeline benchmarking at 10MB, 25MB, and 50MB document sizes;
+    surfaced actionable insights around OpenSearch payload limits, indexing bottlenecks,
+    and embedding latency that influenced platform architecture.
+  stack: [OpenSearch, RAG, Performance]
+
+- title: "Reply Suggestions Feature"
+  slug: reply-suggestions
+  description: >
+    Designed and implemented the Reply Suggestions feature within two weeks of joining,
+    delivering critical infrastructure and CI/CD enhancements for ClioCon 2024. Enhanced
+    observability with comprehensive metrics and asynchronous logging infrastructure.
+  stack: [CI/CD, Infrastructure, Fast Delivery]
+
+- title: "Suggested Query ML Feature"
+  slug: suggested-query
+  description: >
+    Led end-to-end development of Suggested Query feature from hackathon prototype to 2025
+    roadmap. Built contextual questions and follow-ups using OpenAI infrastructure, including
+    technical requirements, architecture design, and cross-team coordination.
+  stack: [OpenAI, ML, Leadership]
+
+- title: "Asynchronous Logging Infrastructure"
+  slug: async-logging
+  description: >
+    Built infrastructure for asynchronous logging by creating a process to write inference
+    logs and developing a RedactionClient to handle inference dump data, improving system
+    observability and data processing capabilities.
+  stack: [Infrastructure, Observability, Logging]
+
+- title: "RAG Development Optimization"
+  slug: rag-dev-optimization
+  description: >
+    Improved local RAG development by implementing SNS and SQS queues, reducing dev/prod
+    infrastructure load. Created isolated development setups for better testing efficiency
+    and enhanced error handling for password-protected documents and Textract failures.
+  stack: [AWS SNS/SQS, RAG, Optimization]
+
+- title: "EKS Cluster Upgrades & Infrastructure"
+  slug: eks-cluster-upgrades
+  description: >
+    Executed successful EKS cluster upgrades twice, ensured environment reliability, and
+    enabled new Kubernetes features through collaboration with Platform Engineering. Improved
+    production resiliency by resolving RDS timeout and duplicate QnA issues.
+  stack: [EKS, Kubernetes, AWS]
+
+- title: "GitOps and ITOps Automation"
+  slug: gitops-automation
+  description: >
+    Initiated GitOps and ITOps automation using n8n, preparing comprehensive proposals for
+    process optimization. Authored documentation for Document Analyzer V2 including class
+    diagrams, folder structure, and established Team Wiki and Release Management Strategy.
+  stack: [GitOps, Automation, n8n]
+
+- title: "Intelligent Data Mapper"
+  slug: intelligent-data-mapper
+  description: >
+    Developed Intelligent Mapper module using Azure OpenAI LLMs to map data from medical
+    devices to industry-standard medical languages such as FHIR and IHE.
+  stack: [Azure OpenAI, LLM, Healthcare, FHIR]
+
+- title: "Automated Test Cases Generation"
+  slug: automated-test-generation
+  description: >
+    Developed automated test case generation module using Azure OpenAI LLMs to promote
+    Test Driven Development across the engineering org.
+  stack: [Azure OpenAI, TDD, Automation]
+
+- title: "Prior Authorization Workflow Optimization"
+  slug: prior-auth-workflow
+  description: >
+    Integrated Generative AI using Azure OpenAI LLMs into the Prior Authorization
+    workflow module, reducing manual review time and improving decision consistency.
+  stack: [Azure OpenAI, GenAI, Healthcare]
+
+- title: "Patient Scorecard Extraction Module"
+  slug: patient-scorecard-extraction
+  description: >
+    Extracted data from patient scorecards and mapped to ICD-10-CM codes using complex
+    NLP-based entity recognition models and deep learning models.
+  stack: [NLP, Deep Learning, Healthcare, ICD-10]
+
+- title: "Decision Tree Prototype"
+  slug: decision-tree-prototype
+  description: >
+    Designed MLOps pipeline and implemented Model Training, Model Registry, Test Bed,
+    and Model Deployment for a clinical decision tree prototype.
+  stack: [MLOps, Model Registry, Python]
+
+- title: "Lens Model Productionalization"
+  slug: lens-model-productionalization
+  description: >
+    Framework to streamline the development-to-deployment lifecycle for ophthalmology-based
+    ML models, enabling faster time to operationalization.
+  stack: [MLOps, Healthcare, Framework]
+
+- title: "NDriver — Sensor Data in Data Centre"
+  slug: ndriver-sensor-data
+  description: >
+    A driver developed to import, read, and write data using SOAP protocol with a
+    server-client architecture for data centre sensor integration.
+  stack: [SOAP, Driver, IoT]
+
+- title: "Alexa for Niagara Framework (N4)"
+  slug: alexa-niagara
+  description: >
+    Developed an Alexa skill for the Niagara framework using AWS MQTT service, allowing
+    users to query and set different parameters of a space in a building.
+  stack: [AWS, MQTT, IoT, Alexa]
+
+- title: "Reporting Tool for Niagara Framework (N4)"
+  slug: reporting-tool-niagara
+  description: >
+    Upgraded a reporting tool using client-server architecture to download EMS data points
+    (temperatures, humidity, generator fuel levels, SLAs) and plot them in Microsoft Excel
+    using VBA.
+  stack: [VBA, Excel, Reporting, Niagara N4]
+
+- title: "Plotly Widget for Niagara Framework (N4)"
+  slug: plotly-widget-niagara
+  description: >
+    Developed a widget supporting 46 different chart types in Niagara Framework N4,
+    including basic, financial, statistical, map, and 3D charts. First of its kind in
+    the Niagara framework.
+  stack: [Plotly, Widget, Visualization, Niagara N4]
+
+- title: "InfluxDB Driver for Niagara Framework (N4)"
+  slug: influxdb-driver-niagara
+  description: >
+    Developed a driver connecting any InfluxDB instance (cloud or on-premises) to Niagara,
+    enabling bidirectional data import/export between both time-series databases.
+  stack: [InfluxDB, Time-Series, Driver, Niagara N4]
+
+- title: "JSON Adapter for Niagara Framework (N4)"
+  slug: json-adapter-niagara
+  description: >
+    Custom JSON adapter for communication between BMS systems and external applications
+    such as EMS. Features heartbeat, NTP sync, ~10,000-point JSON cache, and near-real-time
+    updates. Deployed in data centres across India.
+  stack: [JSON, BMS, Real-time, Niagara N4]
+
+- title: "GPS Adapter for Niagara Framework (N4)"
+  slug: gps-adapter-niagara
+  description: >
+    Developed and deployed a GPS adapter for JACE controllers, integrated with Firebase
+    and Google Maps API to provide live navigation and location data for environment
+    monitoring.
+  stack: [GPS, Firebase, Google Maps, Niagara N4]
+
+- title: "Workspace Management System"
+  slug: workspace-management-system
+  description: >
+    Developed parts of a hot-desking hybrid application integrated with Access Control
+    System (HID ACS), BMS, Google Calendar, and Outlook. Deployed using Docker, Jenkins,
+    Ansible, Let's Encrypt SSL, and NO-IP DNS on cloud and on-premises.
+  stack: [Docker, Jenkins, Ansible, CI/CD]

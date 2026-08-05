@@ -69,6 +69,21 @@
   font-style: italic;
 }
 
+/* Featured badge on individual cards */
+.project-featured-badge {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 10rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 198, 80, 0.15);
+  color: #ffc650;
+  border: 1px solid rgba(255, 198, 80, 0.3);
+}
+
 /* Project cards */
 .projects-list { display: flex; flex-direction: column; gap: 3.2rem; }
 .project-card {
