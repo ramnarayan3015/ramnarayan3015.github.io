@@ -199,9 +199,96 @@ body { background: #0f1c2e; }
 }
 
 
+/* ── About page: section structure ──────────────────── */
+.about-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 4rem 0;
+}
+
+.about-section-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6cb2eb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.about-section-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  margin: 0 0 2.4rem;
+}
+
+/* ── About page: Developer Arsenal pills ─────────── */
+.about-skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.about-skills-category {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-skills-label {
+  min-width: 13rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #6cb2eb;
+  padding-top: 0.55rem;
+  flex-shrink: 0;
+}
+
+.about-skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.about-skill-pill {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  color: #d0d8e2;
+}
+
+/* ── About page: Awards & Honors ─────────────────── */
+.about-awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 1.6rem;
+}
+
+.about-award-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.2rem;
+  padding: 2rem 2.4rem;
+}
+
+.about-award-icon { font-size: 2.4rem; margin-bottom: 0.8rem; }
+.about-award-year { font-size: 1.2rem; font-weight: 700; color: #6cb2eb; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.4rem; }
+.about-award-title { font-size: 1.6rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem; }
+.about-award-company { font-size: 1.3rem; color: #9aa7b5; }
+
 @media (max-width: 720px) {
   .page-main { padding: 4rem 1.6rem 2.4rem; }
   .blog-index-header h1, .page-h1 { font-size: 2.8rem; }
   .post-title { font-size: 2.6rem; }
   .post-content { font-size: 1.6rem; }
+  .about-skills-category { flex-direction: column; gap: 0.8rem; }
+  .about-skills-label { min-width: unset; padding-top: 0; }
+  .about-section-heading { font-size: 2.2rem; }
 }
