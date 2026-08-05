@@ -57,12 +57,17 @@ body {
 
 /* ── Consistent section headings ────────────────────────────── */
 .section-metrics .heading-secondary,
-.section-skills .heading-secondary {
+.section-skills .heading-secondary,
+.section-portfolio .heading-secondary {
   color: #fff !important;
   font-size: 3.2rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
   margin-bottom: 4rem;
+}
+
+.section-portfolio .container {
+  text-align: left;
 }
 
 .experience-heading,
@@ -85,6 +90,14 @@ body {
   font-weight: 700 !important;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* Override enhancements.css which sets section-portfolio text to #333 */
+.section-portfolio .subheading {
+  color: #6cb2eb !important;
+}
+.section-portfolio .heading-secondary {
+  color: #fff !important;
 }
 
 /* ── Metrics cards ──────────────────────────────────────────── */
