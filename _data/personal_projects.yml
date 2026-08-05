@@ -2,6 +2,37 @@
 # Required: title, slug, description
 # Optional: stack, image, live_url, github_url, docs_url
 
+- title: "Photo Editing India"
+  slug: photo-editing-india
+  description: >
+    A dashboard platform for Photo Editing India, providing tools and
+    workflows for professional photo editing services.
+  stack: [Node.js, Dashboard, Web]
+  live_url: https://peidashboard.online:3030/
+
+- title: "ImageIn"
+  slug: imagein
+  description: >
+    Android app for image processing and editing, built for mobile-first
+    photo enhancement workflows.
+  stack: [Android, Java, Mobile]
+
+- title: "Switchboard.AI"
+  slug: switchboard-ai
+  description: >
+    AI-powered platform with a modern web interface for intelligent
+    workflow automation and GenAI integration.
+  stack: [GenAI, Next.js, FastAPI, Python]
+  live_url: https://app.2-28-2-42.nip.io/signin
+
+- title: "ChatBistro"
+  slug: chatbistro
+  description: >
+    Online restaurant ordering system powered by RAG and LLMs — lets
+    customers browse menus, ask questions, and place orders through a
+    conversational AI interface.
+  stack: [RAG, LLM, Python, FastAPI]
+
 - title: "Portfolio Site"
   slug: portfolio
   description: >
