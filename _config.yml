@@ -19,12 +19,13 @@ kramdown:
   syntax_highlighter: rouge
   input: GFM
 
-permalink: /blog/:year/:month/:slug/
+permalink: /:year/:month/:slug/
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 exclude:
   - Gemfile
