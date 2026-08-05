@@ -251,45 +251,54 @@ body {
   font-size: 1.6rem !important;
   text-transform: none !important;
   font-weight: 400 !important;
-  margin-bottom: 4rem !important;
+  margin-bottom: 3.2rem !important;
   margin-top: 0.8rem !important;
   letter-spacing: 0 !important;
 }
 
-.skills-grid {
-  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr)) !important;
-  gap: 1.6rem !important;
-  row-gap: 1.6rem !important;
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.skill-item {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 1rem !important;
-  padding: 2rem 1.2rem !important;
-  background: rgba(255, 255, 255, 0.03) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: 1.2rem !important;
-  transition: border-color 0.2s ease, transform 0.2s ease !important;
-  text-align: center !important;
+.skills-category {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
 }
 
-.skill-item:hover {
-  border-color: rgba(108, 178, 235, 0.3) !important;
-  transform: translateY(-2px) !important;
+.skills-category-label {
+  min-width: 13rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #6cb2eb;
+  padding-top: 0.55rem;
+  flex-shrink: 0;
 }
 
-.section-skills .portfolio-title {
-  font-size: 1.3rem !important;
-  font-weight: 500 !important;
-  color: #b6c2d1 !important;
-  margin: 0 !important;
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
-.skill-item-img {
-  height: 44px !important;
-  width: 44px !important;
+.skill-pill {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  color: #d0d8e2;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.skill-pill:hover {
+  border-color: rgba(108, 178, 235, 0.4);
+  color: #eef2f7;
 }
 
 /* ── Projects pointer section ───────────────────────────────── */
@@ -383,15 +392,14 @@ body {
 
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)) !important;
-    gap: 1.2rem !important;
-    row-gap: 1.2rem !important;
+  .skills-category {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
-  .skill-item-img {
-    height: 36px !important;
-    width: 36px !important;
+  .skills-category-label {
+    min-width: unset;
+    padding-top: 0;
   }
 
   .experience-heading,
