@@ -32,9 +32,9 @@
   margin-bottom: 1.2rem;
 }
 .projects-badge--office {
-  background: rgba(99, 102, 241, 0.15);
-  color: #6366f1;
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: rgba(79, 70, 229, 0.15);
+  color: #4f46e5;
+  border: 1px solid rgba(79, 70, 229, 0.3);
 }
 .projects-badge--personal {
   background: rgba(31, 168, 124, 0.15);
@@ -93,13 +93,13 @@
   padding: 3.2rem;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
-.project-card:hover { transform: translateY(-2px); border-color: rgba(99, 102, 241, 0.3); }
+.project-card:hover { transform: translateY(-2px); border-color: rgba(79, 70, 229, 0.3); }
 .project-image { margin: -3.2rem -3.2rem 2.4rem; border-radius: 1.2rem 1.2rem 0 0; overflow: hidden; }
 .project-image img { display: block; width: 100%; height: auto; }
 .project-title { font-size: 2.4rem; font-weight: 700; color: #fff; margin-bottom: 1.2rem; }
 .project-description { font-size: 1.6rem; color: #d0d8e2; line-height: 1.7; margin-bottom: 1.6rem; }
 .project-stack { font-size: 1.4rem; color: #9aa7b5; margin-bottom: 2.4rem; }
-.project-stack-label { color: #6366f1; font-weight: 600; margin-right: 0.6rem; }
+.project-stack-label { color: #4f46e5; font-weight: 600; margin-right: 0.6rem; }
 .project-stack-item { color: #cbd5e0; }
 
 .project-actions { display: flex; flex-wrap: wrap; gap: 1.2rem; }
@@ -127,7 +127,7 @@
   text-align: center;
   font-size: 1.6rem;
 }
-.projects-cross a { color: #6366f1; text-decoration: none; }
+.projects-cross a { color: #4f46e5; text-decoration: none; }
 .projects-cross a:hover { color: #fff; }
 
 @media (max-width: 720px) {

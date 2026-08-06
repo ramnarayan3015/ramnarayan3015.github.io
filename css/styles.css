@@ -76,7 +76,7 @@ Medium: 11px
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1652342433 .shape-fill {
+.custom-shape-divider-bottom-1652342433 .shape-fill { /* hero → page bg */
   fill: #fff;
 }
 
