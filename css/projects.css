@@ -7,16 +7,10 @@ body { background: #f0f4f8; color: #475569; }
   padding: 4.8rem 3.2rem 6.4rem;
 }
 
-/* Page header — reset global `header` nav styles that leak in */
+/* Page header */
 .projects-header {
   margin-bottom: 5.6rem;
   text-align: center;
-  background: none !important;
-  height: auto !important;
-  display: block !important;
-  padding: 0 !important;
-  justify-content: unset !important;
-  align-items: unset !important;
 }
 .projects-header h1 {
   font-size: 4.4rem;
