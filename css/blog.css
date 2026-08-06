@@ -5,7 +5,7 @@
 
 /* Ensure body is always dark on blog-family pages so any gap between
    page-main and the footer wave never shows the browser default white. */
-body { background: #0f1c2e; }
+body { background: #111827; }
 
 /* Generic content-column wrapper used by blog-index, post, about, contact.
    Explicit dark background so blog-family pages have proper contrast even
@@ -15,10 +15,10 @@ body { background: #0f1c2e; }
 .page-main {
   padding: 6rem 0 4rem;
   min-height: 60vh;
-  background: linear-gradient(180deg, #0f1c2e 0%, #14243a 100%);
+  background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
   color: #e6ecf3;
 }
-.page-main a { color: #6cb2eb; }
+.page-main a { color: #6366f1; }
 .page-main a:hover { color: #fff; }
 
 /* Override portfolio's .heading-* rules for about/contact page titles */
@@ -66,7 +66,7 @@ body { background: #0f1c2e; }
 }
 .post-card:first-child { border-top: none; padding-top: 0; }
 .post-card-link { text-decoration: none; color: inherit; display: block; }
-.post-card-link:hover .post-card-title { color: #6cb2eb; }
+.post-card-link:hover .post-card-title { color: #6366f1; }
 .post-card-title {
   font-size: 2.4rem;
   font-weight: 700;
@@ -78,7 +78,7 @@ body { background: #0f1c2e; }
 .post-card-excerpt { color: #cbd5e0; margin: 0; font-size: 1.6rem; }
 
 .post-tag {
-  color: #6cb2eb;
+  color: #6366f1;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -100,12 +100,12 @@ body { background: #0f1c2e; }
 .post-content h2 { color: #fff; font-size: 2.4rem; margin: 3.2rem 0 1.2rem; }
 .post-content h3 { color: #fff; font-size: 2rem; margin: 2.4rem 0 1rem; }
 .post-content p  { margin: 0 0 1.6rem 0; }
-.post-content a  { color: #6cb2eb; text-decoration: none; border-bottom: 1px solid rgba(108, 178, 235, 0.4); }
+.post-content a  { color: #6366f1; text-decoration: none; border-bottom: 1px solid rgba(99, 102, 241, 0.4); }
 .post-content a:hover { color: #fff; border-color: #fff; }
 .post-content ul, .post-content ol { padding-left: 2.4rem; margin: 0 0 1.6rem 0; }
 .post-content li { margin-bottom: 0.4rem; }
 .post-content blockquote {
-  border-left: 3px solid #6cb2eb;
+  border-left: 3px solid #6366f1;
   padding-left: 1.6rem;
   color: #b6c2d1;
   margin: 1.6rem 0;
@@ -119,7 +119,7 @@ body { background: #0f1c2e; }
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 .post-content pre {
-  background: #0a1524;
+  background: #0f172a;
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 1.6rem;
   border-radius: 0.8rem;
@@ -139,7 +139,7 @@ body { background: #0f1c2e; }
   padding-top: 2.4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
-.post-nav a { color: #6cb2eb; text-decoration: none; font-size: 1.4rem; }
+.post-nav a { color: #6366f1; text-decoration: none; font-size: 1.4rem; }
 .post-nav a:hover { color: #fff; }
 .post-back { text-align: center; margin: 2.4rem 0; }
 .post-back a { color: #9aa7b5; text-decoration: none; font-size: 1.4rem; }
@@ -149,8 +149,8 @@ body { background: #0f1c2e; }
 .subscribe {
   margin: 4.8rem 0 2.4rem 0;
   padding: 2.4rem;
-  background: rgba(108, 178, 235, 0.06);
-  border: 1px solid rgba(108, 178, 235, 0.2);
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 0.8rem;
 }
 .subscribe h3 { color: #fff; font-size: 1.8rem; margin: 0 0 0.6rem 0; }
@@ -173,13 +173,13 @@ body { background: #0f1c2e; }
 }
 .embeddable-buttondown-form input[type="email"]:focus {
   outline: none;
-  border-color: #6cb2eb;
+  border-color: #6366f1;
   background: rgba(255, 255, 255, 0.09);
 }
 .subscribe-btn {
   padding: 1rem 1.8rem;
-  background: #6cb2eb;
-  color: #0f1c2e;
+  background: #6366f1;
+  color: #111827;
   border: none;
   border-radius: 0.6rem;
   font-size: 1.4rem;
@@ -187,9 +187,9 @@ body { background: #0f1c2e; }
   cursor: pointer;
   transition: background 0.15s ease;
 }
-.subscribe-btn:hover { background: #4fa2e5; }
+.subscribe-btn:hover { background: #4f46e5; }
 .rss-fallback { color: #9aa7b5; font-size: 1.3rem; margin: 0; }
-.rss-fallback a { color: #6cb2eb; text-decoration: none; }
+.rss-fallback a { color: #6366f1; text-decoration: none; }
 .rss-fallback a:hover { color: #fff; }
 
 .sr-only {
@@ -210,7 +210,7 @@ body { background: #0f1c2e; }
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #6cb2eb;
+  color: #6366f1;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -243,7 +243,7 @@ body { background: #0f1c2e; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #6cb2eb;
+  color: #6366f1;
   padding-top: 0.55rem;
   flex-shrink: 0;
 }
@@ -279,7 +279,7 @@ body { background: #0f1c2e; }
 }
 
 .about-award-icon { font-size: 2.4rem; margin-bottom: 0.8rem; }
-.about-award-year { font-size: 1.2rem; font-weight: 700; color: #6cb2eb; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.4rem; }
+.about-award-year { font-size: 1.2rem; font-weight: 700; color: #6366f1; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.4rem; }
 .about-award-title { font-size: 1.6rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem; }
 .about-award-company { font-size: 1.3rem; color: #9aa7b5; }
 

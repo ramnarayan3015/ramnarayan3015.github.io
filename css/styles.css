@@ -85,7 +85,7 @@ header {
   display: flex;
   justify-content: space-between;
   height: 9.6rem;
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5170 100%);
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
   align-items: center;
   padding: 0 4.8rem;
 
@@ -131,7 +131,7 @@ header {
 }
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #2c5170;
+  background-color: #312e81;
 }
 /* MOBILE */
 .btn-mobile-nav {
@@ -160,7 +160,7 @@ header {
 /************SECTION-HERO************/
 .section-hero {
   position: relative;
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5170 100%);
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
   padding: 4.8rem 0;
   min-height: 65rem;
   /* width: 170rem; */
@@ -202,7 +202,7 @@ header {
 }
 .hero-btn:hover,
 .hero-btn:active {
-  background-color: #2c5170;
+  background-color: #312e81;
   transition: all 0.3s;
 }
 
@@ -402,12 +402,12 @@ header {
 }
 
 .custom-shape-divider-bottom-1652512758 .shape-fill {
-  fill: #1e3a5f;
+  fill: #1e1b4b;
 }
 
 .wave {
   position: relative;
-  background: #0f1c2e;
+  background: #111827;
 }
 
 /* temp */
@@ -503,7 +503,7 @@ header {
 }
 .portfolio-external-btn:hover,
 .portfolio-external-btn:active {
-  color: #2c5170;
+  color: #312e81;
 }
 
 .portfolio-img-box {
@@ -570,7 +570,7 @@ footer {
 .section-footer {
   margin-top: 4.8rem;
   padding: 3.2rem 0;
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5170 100%);
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
 }
 .footer-grid {
   display: grid;
@@ -689,7 +689,7 @@ footer {
 }
 .demo:hover,
 .demo:active {
-  background-color: #2c5170;
+  background-color: #312e81;
 }
 .techStack-description {
   font-size: 2.4rem;
@@ -710,7 +710,7 @@ footer {
 /* SECTION SKILLS */
 .section-skills {
   position: relative;
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5170 100%);
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
   padding: 9.6rem 0;
   margin-bottom: 4.8rem;
   margin-top: 0;

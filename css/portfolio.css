@@ -3,19 +3,19 @@
  *
  * Overrides the per-section backgrounds set by experience.css,
  * certifications.css, and enhancements.css so every section shares
- * the same #0f1c2e base and glass-morphism card language as
+ * the same #111827 base and glass-morphism card language as
  * blog.css / projects.css.
  */
 
 /* ── Page base ─────────────────────────────────────────────── */
 body {
-  background: #0f1c2e;
+  background: #111827;
   color: #eef2f7;
 }
 
 /* SVG hero-wave → match page background so the transition is seamless */
 .custom-shape-divider-bottom-1652342433 .shape-fill {
-  fill: #0f1c2e;
+  fill: #111827;
 }
 
 /* ── Kill all per-section backgrounds ───────────────────────── */
@@ -91,7 +91,7 @@ body {
 
 /* Section label badges */
 .subheading {
-  color: #6cb2eb !important;
+  color: #6366f1 !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   text-transform: uppercase;
@@ -100,7 +100,7 @@ body {
 
 /* Override enhancements.css which sets section-portfolio text to #333 */
 .section-portfolio .subheading {
-  color: #6cb2eb !important;
+  color: #6366f1 !important;
 }
 .section-portfolio .heading-secondary {
   color: #fff !important;
@@ -121,13 +121,13 @@ body {
 }
 
 .metric-card:hover {
-  border-color: rgba(108, 178, 235, 0.3) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
   transform: translateY(-2px) !important;
   box-shadow: none !important;
 }
 
 .metric-number {
-  color: #6cb2eb !important;
+  color: #6366f1 !important;
 }
 
 .metric-label {
@@ -153,7 +153,7 @@ body {
 }
 
 .experience-card:hover {
-  border-color: rgba(108, 178, 235, 0.3) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
   transform: translateY(-2px) !important;
   box-shadow: none !important;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .experience-role {
-  color: #6cb2eb !important;
+  color: #6366f1 !important;
 }
 
 .experience-company {
@@ -176,9 +176,9 @@ body {
 }
 
 .experience-badge {
-  background: rgba(108, 178, 235, 0.15) !important;
-  color: #6cb2eb !important;
-  border: 1px solid rgba(108, 178, 235, 0.25) !important;
+  background: rgba(99, 102, 241, 0.15) !important;
+  color: #6366f1 !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
 }
 
 /* ── Education cards ────────────────────────────────────────── */
@@ -196,7 +196,7 @@ body {
 }
 
 .education-card:hover {
-  border-color: rgba(108, 178, 235, 0.3) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
   transform: translateY(-2px) !important;
   box-shadow: none !important;
 }
@@ -211,7 +211,7 @@ body {
 }
 
 .education-degree {
-  color: #6cb2eb !important;
+  color: #6366f1 !important;
 }
 
 .education-details {
@@ -232,30 +232,30 @@ body {
 
 .certification-card:hover {
   background: rgba(255, 255, 255, 0.05) !important;
-  border-color: rgba(108, 178, 235, 0.3) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
   transform: translateX(4px) translateY(-1px) !important;
   box-shadow: none !important;
 }
 
 .certification-card.featured {
-  background: rgba(108, 178, 235, 0.08) !important;
-  border-color: rgba(108, 178, 235, 0.3) !important;
+  background: rgba(99, 102, 241, 0.08) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
 }
 
 .certification-card.in-progress {
-  background: rgba(108, 178, 235, 0.05) !important;
-  border-color: rgba(108, 178, 235, 0.2) !important;
+  background: rgba(99, 102, 241, 0.05) !important;
+  border-color: rgba(99, 102, 241, 0.2) !important;
 }
 
 .certification-year {
-  color: #6cb2eb !important;
-  border-bottom-color: rgba(108, 178, 235, 0.2) !important;
+  color: #6366f1 !important;
+  border-bottom-color: rgba(99, 102, 241, 0.2) !important;
 }
 
 .certification-badge {
-  background: rgba(108, 178, 235, 0.15) !important;
+  background: rgba(99, 102, 241, 0.15) !important;
   color: #93c5fd !important;
-  border-color: rgba(108, 178, 235, 0.25) !important;
+  border-color: rgba(99, 102, 241, 0.25) !important;
 }
 
 .certification-badge.featured-badge {
@@ -293,7 +293,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #6cb2eb;
+  color: #6366f1;
   padding-top: 0.55rem;
   flex-shrink: 0;
 }
@@ -316,7 +316,7 @@ body {
 }
 
 .skill-pill:hover {
-  border-color: rgba(108, 178, 235, 0.4);
+  border-color: rgba(99, 102, 241, 0.4);
   color: #eef2f7;
 }
 
@@ -336,7 +336,7 @@ body {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #6cb2eb;
+  color: #6366f1;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1.2rem;
@@ -368,7 +368,7 @@ body {
 }
 
 .writing-card:hover {
-  border-color: rgba(108, 178, 235, 0.3);
+  border-color: rgba(99, 102, 241, 0.3);
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -386,7 +386,7 @@ body {
 }
 
 .writing-card-tag {
-  color: #6cb2eb;
+  color: #6366f1;
   font-weight: 600;
 }
 
@@ -400,7 +400,7 @@ body {
 .writing-all-link {
   display: inline-block;
   margin-top: 2.4rem;
-  color: #6cb2eb;
+  color: #6366f1;
   text-decoration: none;
   font-size: 1.5rem;
 }
