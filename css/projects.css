@@ -1,4 +1,5 @@
 body { background: #f0f4f8; color: #475569; }
+.page-main { background: #f0f4f8 !important; }
 
 .projects {
   max-width: 88rem;
