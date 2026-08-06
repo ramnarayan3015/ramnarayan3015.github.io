@@ -4,13 +4,13 @@
 
 /* ── Page base ─────────────────────────────────────────────── */
 body {
-  background: #f9fafb;
-  color: #374151;
+  background: #f0f4f8;
+  color: #475569;
 }
 
 /* SVG hero-wave → match page background so the transition is seamless */
 .custom-shape-divider-bottom-1652342433 .shape-fill {
-  fill: #f9fafb;
+  fill: #f0f4f8;
 }
 
 /* ── Kill all per-section backgrounds ───────────────────────── */
@@ -46,7 +46,7 @@ body {
 /* Thin divider between sections */
 .section-divider {
   border: none;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #cbd5e1;
   margin: 0 3.2rem;
 }
 
@@ -54,7 +54,7 @@ body {
 .section-metrics .heading-secondary,
 .section-skills .heading-secondary,
 .section-portfolio .heading-secondary {
-  color: #111827 !important;
+  color: #0f172a !important;
   font-size: 3.2rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -74,7 +74,7 @@ body {
 .experience-heading,
 .education-heading,
 .certifications-heading {
-  color: #111827 !important;
+  color: #0f172a !important;
   font-size: 3.2rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px;
@@ -86,7 +86,7 @@ body {
 
 /* Section label badges */
 .subheading {
-  color: #4f46e5 !important;
+  color: #0284c7 !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   text-transform: uppercase;
@@ -95,10 +95,10 @@ body {
 
 /* Override enhancements.css which sets section-portfolio text to #333 */
 .section-portfolio .subheading {
-  color: #4f46e5 !important;
+  color: #0284c7 !important;
 }
 .section-portfolio .heading-secondary {
-  color: #111827 !important;
+  color: #0f172a !important;
 }
 
 /* ── Metrics cards ──────────────────────────────────────────── */
@@ -108,37 +108,37 @@ body {
 
 .metric-card {
   background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: 1.2rem !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
-  color: #374151 !important;
+  color: #475569 !important;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .metric-card:hover {
-  border-color: rgba(79, 70, 229, 0.3) !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
 .metric-number {
-  color: #4f46e5 !important;
+  color: #0284c7 !important;
 }
 
 .metric-label {
-  color: #111827 !important;
+  color: #0f172a !important;
 }
 
 .metric-description {
-  color: #6b7280 !important;
+  color: #94a3b8 !important;
 }
 
 /* ── Experience cards ───────────────────────────────────────── */
 .experience-card {
   background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: 1.2rem !important;
-  color: #374151 !important;
+  color: #475569 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
@@ -148,40 +148,40 @@ body {
 }
 
 .experience-card:hover {
-  border-color: rgba(79, 70, 229, 0.3) !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
 .experience-date {
-  color: #6b7280 !important;
+  color: #94a3b8 !important;
   font-size: 1.3rem !important;
 }
 
 .experience-title {
-  color: #111827 !important;
+  color: #0f172a !important;
 }
 
 .experience-role {
-  color: #4f46e5 !important;
+  color: #0284c7 !important;
 }
 
 .experience-company {
-  color: #374151 !important;
+  color: #475569 !important;
 }
 
 .experience-badge {
-  background: rgba(79, 70, 229, 0.08) !important;
-  color: #4f46e5 !important;
-  border: 1px solid rgba(79, 70, 229, 0.2) !important;
+  background: rgba(2, 132, 199, 0.08) !important;
+  color: #0284c7 !important;
+  border: 1px solid rgba(2, 132, 199, 0.2) !important;
 }
 
 /* ── Education cards ────────────────────────────────────────── */
 .education-card {
   background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: 1.2rem !important;
-  color: #374151 !important;
+  color: #475569 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
@@ -191,67 +191,67 @@ body {
 }
 
 .education-card:hover {
-  border-color: rgba(79, 70, 229, 0.3) !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
 .education-date {
-  color: #6b7280 !important;
+  color: #94a3b8 !important;
   font-size: 1.3rem !important;
 }
 
 .education-institution {
-  color: #111827 !important;
+  color: #0f172a !important;
 }
 
 .education-degree {
-  color: #4f46e5 !important;
+  color: #0284c7 !important;
 }
 
 .education-details {
-  color: #374151 !important;
+  color: #475569 !important;
 }
 
 .education-location {
-  color: #6b7280 !important;
+  color: #94a3b8 !important;
 }
 
 /* ── Certification cards ────────────────────────────────────── */
 .certification-card {
   background: #ffffff !important;
-  border-color: #e5e7eb !important;
+  border-color: #cbd5e1 !important;
   border-radius: 1.2rem !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .certification-card:hover {
-  background: #f9fafb !important;
-  border-color: rgba(79, 70, 229, 0.3) !important;
+  background: #f0f4f8 !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
   transform: translateX(4px) translateY(-1px) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
 .certification-card.featured {
-  background: rgba(79, 70, 229, 0.04) !important;
-  border-color: rgba(79, 70, 229, 0.2) !important;
+  background: rgba(2, 132, 199, 0.04) !important;
+  border-color: rgba(2, 132, 199, 0.2) !important;
 }
 
 .certification-card.in-progress {
-  background: rgba(79, 70, 229, 0.02) !important;
-  border-color: rgba(79, 70, 229, 0.15) !important;
+  background: rgba(2, 132, 199, 0.02) !important;
+  border-color: rgba(2, 132, 199, 0.15) !important;
 }
 
 .certification-year {
-  color: #4f46e5 !important;
-  border-bottom-color: #e5e7eb !important;
+  color: #0284c7 !important;
+  border-bottom-color: #cbd5e1 !important;
 }
 
 .certification-badge {
-  background: rgba(79, 70, 229, 0.08) !important;
-  color: #4f46e5 !important;
-  border-color: rgba(79, 70, 229, 0.2) !important;
+  background: rgba(2, 132, 199, 0.08) !important;
+  color: #0284c7 !important;
+  border-color: rgba(2, 132, 199, 0.2) !important;
 }
 
 .certification-badge.featured-badge {
@@ -262,7 +262,7 @@ body {
 
 /* ── Skills section ─────────────────────────────────────────── */
 .skills-subheading {
-  color: #6b7280 !important;
+  color: #94a3b8 !important;
   font-size: 1.6rem !important;
   text-transform: none !important;
   font-weight: 400 !important;
@@ -289,7 +289,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #4f46e5;
+  color: #0284c7;
   padding-top: 0.55rem;
   flex-shrink: 0;
 }
@@ -304,16 +304,16 @@ body {
   display: inline-block;
   padding: 0.5rem 1.2rem;
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #cbd5e1;
   border-radius: 10rem;
   font-size: 1.4rem;
-  color: #374151;
+  color: #475569;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 .skill-pill:hover {
-  border-color: rgba(79, 70, 229, 0.4);
-  color: #4f46e5;
+  border-color: rgba(2, 132, 199, 0.4);
+  color: #0284c7;
 }
 
 /* ── Projects pointer section ───────────────────────────────── */
@@ -332,7 +332,7 @@ body {
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #4f46e5;
+  color: #0284c7;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1.2rem;
@@ -341,7 +341,7 @@ body {
 .writing-heading {
   font-size: 3.2rem;
   font-weight: 700;
-  color: #111827;
+  color: #0f172a;
   letter-spacing: -0.5px;
   margin: 0 0 2.4rem 0;
 }
@@ -356,7 +356,7 @@ body {
   display: block;
   padding: 2rem 2.4rem;
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #cbd5e1;
   border-radius: 1.2rem;
   text-decoration: none;
   color: inherit;
@@ -365,30 +365,30 @@ body {
 }
 
 .writing-card:hover {
-  border-color: rgba(79, 70, 229, 0.3);
+  border-color: rgba(2, 132, 199, 0.3);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .writing-card-title {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #111827;
+  color: #0f172a;
   margin: 0 0 0.4rem 0;
 }
 
 .writing-card-meta {
-  color: #6b7280;
+  color: #94a3b8;
   font-size: 1.3rem;
   margin: 0 0 0.8rem 0;
 }
 
 .writing-card-tag {
-  color: #4f46e5;
+  color: #0284c7;
   font-weight: 600;
 }
 
 .writing-card-excerpt {
-  color: #6b7280;
+  color: #94a3b8;
   font-size: 1.5rem;
   margin: 0;
   line-height: 1.6;
@@ -397,13 +397,13 @@ body {
 .writing-all-link {
   display: inline-block;
   margin-top: 2.4rem;
-  color: #4f46e5;
+  color: #0284c7;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
 .writing-all-link:hover {
-  color: #3730a3;
+  color: #0369a1;
 }
 
 /* ── Responsive ─────────────────────────────────────────────── */

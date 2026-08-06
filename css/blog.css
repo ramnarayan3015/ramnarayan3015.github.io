@@ -1,21 +1,21 @@
 /* Blog / post / subscribe / about styles. Loaded by _layouts/default.html */
 
-body { background: #f9fafb; }
+body { background: #f0f4f8; }
 
 .page-main {
   padding: 6rem 0 4rem;
   min-height: 60vh;
   background: #ffffff;
-  color: #374151;
-  border-bottom: 1px solid #e5e7eb;
+  color: #475569;
+  border-bottom: 1px solid #cbd5e1;
 }
-.page-main a { color: #4f46e5; }
-.page-main a:hover { color: #3730a3; }
+.page-main a { color: #0284c7; }
+.page-main a:hover { color: #0369a1; }
 
 /* Override portfolio's .heading-* rules for about/contact page titles */
 .page-h1 {
   font-size: 3.6rem;
-  color: #111827;
+  color: #0f172a;
   margin: 0 0 1.6rem 0;
   letter-spacing: -0.5px;
   line-height: 1.2;
@@ -23,7 +23,7 @@ body { background: #f9fafb; }
   text-align: left;
 }
 .page-lede {
-  color: #6b7280;
+  color: #94a3b8;
   font-size: 1.8rem;
   line-height: 1.7;
   margin: 0 0 1.6rem 0;
@@ -35,7 +35,7 @@ body { background: #f9fafb; }
   max-width: 76rem;
   margin: 0 auto;
   padding: 0 2rem;
-  color: #374151;
+  color: #475569;
   font-size: 1.7rem;
   line-height: 1.75;
 }
@@ -44,67 +44,67 @@ body { background: #f9fafb; }
 .blog-index-header { margin-bottom: 3.2rem; text-align: left; }
 .blog-index-header h1 {
   font-size: 4rem;
-  color: #111827;
+  color: #0f172a;
   margin: 0 0 0.8rem 0;
   letter-spacing: -0.5px;
 }
-.blog-index-subtitle { color: #6b7280; font-size: 1.6rem; margin: 0; }
+.blog-index-subtitle { color: #94a3b8; font-size: 1.6rem; margin: 0; }
 
 .post-list { list-style: none; padding: 0; margin: 0 0 4.8rem 0; display: flex; flex-direction: column; gap: 2.4rem; }
 .post-card {
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #cbd5e1;
   padding-top: 2.4rem;
 }
 .post-card:first-child { border-top: none; padding-top: 0; }
 .post-card-link { text-decoration: none; color: inherit; display: block; }
-.post-card-link:hover .post-card-title { color: #4f46e5; }
+.post-card-link:hover .post-card-title { color: #0284c7; }
 .post-card-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #111827;
+  color: #0f172a;
   margin: 0 0 0.6rem 0;
   transition: color 0.15s ease;
 }
-.post-card-meta { color: #6b7280; font-size: 1.3rem; margin: 0 0 1rem 0; }
-.post-card-excerpt { color: #374151; margin: 0; font-size: 1.6rem; }
+.post-card-meta { color: #94a3b8; font-size: 1.3rem; margin: 0 0 1rem 0; }
+.post-card-excerpt { color: #475569; margin: 0; font-size: 1.6rem; }
 
 .post-tag {
-  color: #4f46e5;
+  color: #0284c7;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.blog-empty { color: #6b7280; text-align: center; padding: 4.8rem 0; }
+.blog-empty { color: #94a3b8; text-align: center; padding: 4.8rem 0; }
 
 /* Single post */
 .post-header { margin-bottom: 3.2rem; }
 .post-title {
   font-size: 3.6rem;
-  color: #111827;
+  color: #0f172a;
   margin: 0 0 1.2rem 0;
   line-height: 1.2;
   letter-spacing: -0.5px;
 }
-.post-meta { color: #6b7280; font-size: 1.4rem; margin: 0; }
+.post-meta { color: #94a3b8; font-size: 1.4rem; margin: 0; }
 
-.post-content { color: #374151; font-size: 1.7rem; line-height: 1.75; }
-.post-content h2 { color: #111827; font-size: 2.4rem; margin: 3.2rem 0 1.2rem; }
-.post-content h3 { color: #111827; font-size: 2rem; margin: 2.4rem 0 1rem; }
+.post-content { color: #475569; font-size: 1.7rem; line-height: 1.75; }
+.post-content h2 { color: #0f172a; font-size: 2.4rem; margin: 3.2rem 0 1.2rem; }
+.post-content h3 { color: #0f172a; font-size: 2rem; margin: 2.4rem 0 1rem; }
 .post-content p  { margin: 0 0 1.6rem 0; }
-.post-content a  { color: #4f46e5; text-decoration: none; border-bottom: 1px solid rgba(79, 70, 229, 0.3); }
-.post-content a:hover { color: #3730a3; border-color: #3730a3; }
+.post-content a  { color: #0284c7; text-decoration: none; border-bottom: 1px solid rgba(2, 132, 199, 0.3); }
+.post-content a:hover { color: #0369a1; border-color: #0369a1; }
 .post-content ul, .post-content ol { padding-left: 2.4rem; margin: 0 0 1.6rem 0; }
 .post-content li { margin-bottom: 0.4rem; }
 .post-content blockquote {
-  border-left: 3px solid #4f46e5;
+  border-left: 3px solid #0284c7;
   padding-left: 1.6rem;
-  color: #6b7280;
+  color: #94a3b8;
   margin: 1.6rem 0;
   font-style: italic;
 }
 .post-content code {
   background: #f3f4f6;
-  color: #374151;
+  color: #475569;
   padding: 0.2rem 0.5rem;
   border-radius: 0.4rem;
   font-size: 0.92em;
@@ -112,7 +112,7 @@ body { background: #f9fafb; }
 }
 .post-content pre {
   background: #1e293b;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #cbd5e1;
   padding: 1.6rem;
   border-radius: 0.8rem;
   overflow-x: auto;
@@ -121,7 +121,7 @@ body { background: #f9fafb; }
 }
 .post-content pre code { background: transparent; padding: 0; color: #e2e8f0; }
 .post-content img { max-width: 100%; height: auto; border-radius: 0.6rem; margin: 1.6rem 0; }
-.post-content hr { border: 0; border-top: 1px solid #e5e7eb; margin: 3.2rem 0; }
+.post-content hr { border: 0; border-top: 1px solid #cbd5e1; margin: 3.2rem 0; }
 
 .post-nav {
   display: flex;
@@ -129,24 +129,24 @@ body { background: #f9fafb; }
   gap: 1.6rem;
   margin: 4.8rem 0 1.6rem 0;
   padding-top: 2.4rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #cbd5e1;
 }
-.post-nav a { color: #4f46e5; text-decoration: none; font-size: 1.4rem; }
-.post-nav a:hover { color: #3730a3; }
+.post-nav a { color: #0284c7; text-decoration: none; font-size: 1.4rem; }
+.post-nav a:hover { color: #0369a1; }
 .post-back { text-align: center; margin: 2.4rem 0; }
-.post-back a { color: #6b7280; text-decoration: none; font-size: 1.4rem; }
-.post-back a:hover { color: #111827; }
+.post-back a { color: #94a3b8; text-decoration: none; font-size: 1.4rem; }
+.post-back a:hover { color: #0f172a; }
 
 /* Subscribe include */
 .subscribe {
   margin: 4.8rem 0 2.4rem 0;
   padding: 2.4rem;
-  background: rgba(79, 70, 229, 0.04);
-  border: 1px solid rgba(79, 70, 229, 0.15);
+  background: rgba(2, 132, 199, 0.04);
+  border: 1px solid rgba(2, 132, 199, 0.15);
   border-radius: 0.8rem;
 }
-.subscribe h3 { color: #111827; font-size: 1.8rem; margin: 0 0 0.6rem 0; }
-.subscribe-lede { color: #6b7280; font-size: 1.4rem; margin: 0 0 1.6rem 0; }
+.subscribe h3 { color: #0f172a; font-size: 1.8rem; margin: 0 0 0.6rem 0; }
+.subscribe-lede { color: #94a3b8; font-size: 1.4rem; margin: 0 0 1.6rem 0; }
 .embeddable-buttondown-form {
   display: flex;
   gap: 0.8rem;
@@ -158,19 +158,19 @@ body { background: #f9fafb; }
   min-width: 20rem;
   padding: 1rem 1.2rem;
   background: #ffffff;
-  color: #111827;
+  color: #0f172a;
   border: 1px solid #d1d5db;
   border-radius: 0.6rem;
   font-size: 1.4rem;
 }
 .embeddable-buttondown-form input[type="email"]:focus {
   outline: none;
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
 }
 .subscribe-btn {
   padding: 1rem 1.8rem;
-  background: #4f46e5;
+  background: #0284c7;
   color: #ffffff;
   border: none;
   border-radius: 0.6rem;
@@ -179,10 +179,10 @@ body { background: #f9fafb; }
   cursor: pointer;
   transition: background 0.15s ease;
 }
-.subscribe-btn:hover { background: #3730a3; }
-.rss-fallback { color: #6b7280; font-size: 1.3rem; margin: 0; }
-.rss-fallback a { color: #4f46e5; text-decoration: none; }
-.rss-fallback a:hover { color: #3730a3; }
+.subscribe-btn:hover { background: #0369a1; }
+.rss-fallback { color: #94a3b8; font-size: 1.3rem; margin: 0; }
+.rss-fallback a { color: #0284c7; text-decoration: none; }
+.rss-fallback a:hover { color: #0369a1; }
 
 .sr-only {
   position: absolute; width: 1px; height: 1px;
@@ -194,7 +194,7 @@ body { background: #f9fafb; }
 /* ── About page: section structure ──────────────────────────── */
 .about-divider {
   border: none;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #cbd5e1;
   margin: 4rem 0;
 }
 
@@ -202,7 +202,7 @@ body { background: #f9fafb; }
   display: block;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #4f46e5;
+  color: #0284c7;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -211,7 +211,7 @@ body { background: #f9fafb; }
 .about-section-heading {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #111827;
+  color: #0f172a;
   letter-spacing: -0.5px;
   margin: 0 0 2.4rem;
 }
@@ -235,7 +235,7 @@ body { background: #f9fafb; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #4f46e5;
+  color: #0284c7;
   padding-top: 0.55rem;
   flex-shrink: 0;
 }
@@ -250,10 +250,10 @@ body { background: #f9fafb; }
   display: inline-block;
   padding: 0.5rem 1.2rem;
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #cbd5e1;
   border-radius: 10rem;
   font-size: 1.4rem;
-  color: #374151;
+  color: #475569;
 }
 
 /* ── About page: Awards & Honors ─────────────────────────────── */
@@ -265,16 +265,16 @@ body { background: #f9fafb; }
 
 .about-award-card {
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #cbd5e1;
   border-radius: 1.2rem;
   padding: 2rem 2.4rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .about-award-icon { font-size: 2.4rem; margin-bottom: 0.8rem; }
-.about-award-year { font-size: 1.2rem; font-weight: 700; color: #4f46e5; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.4rem; }
-.about-award-title { font-size: 1.6rem; font-weight: 700; color: #111827; margin-bottom: 0.4rem; }
-.about-award-company { font-size: 1.3rem; color: #6b7280; }
+.about-award-year { font-size: 1.2rem; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.4rem; }
+.about-award-title { font-size: 1.6rem; font-weight: 700; color: #0f172a; margin-bottom: 0.4rem; }
+.about-award-company { font-size: 1.3rem; color: #94a3b8; }
 
 @media (max-width: 720px) {
   .page-main { padding: 4rem 1.6rem 2.4rem; }
