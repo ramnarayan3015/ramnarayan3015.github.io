@@ -123,9 +123,9 @@ body { background: #f0f4f8; color: #475569; }
   transition: transform 0.15s ease, background 0.15s ease;
 }
 .project-btn:hover { transform: translateY(-1px); }
-.project-btn-live { background: #0284c7; color: #fff; }
-.project-btn-live:hover { background: #0369a1; }
-.project-btn-github { background: #24292e; color: #fff; }
+.project-btn-live { background: #0284c7; color: #fff !important; }
+.project-btn-live:hover { background: #0369a1; color: #fff !important; }
+.project-btn-github { background: #24292e; color: #fff !important; }
 .project-btn-github:hover { background: #12171d; }
 .project-btn-docs { background: #f0f4f8; color: #475569; border: 1px solid #cbd5e1; }
 .project-btn-docs:hover { background: #e2e8f0; }

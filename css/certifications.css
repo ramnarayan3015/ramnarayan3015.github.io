@@ -1,7 +1,7 @@
 /* Certifications Section Styling - Modern Card Design */
 .certifications-section {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a5f 100%);
-  color: white;
+  background: #f0f4f8;
+  color: #0f172a;
   padding: 9.6rem 0;
   margin-bottom: 4.8rem;
   margin-top: 0;
@@ -10,16 +10,7 @@
 }
 
 .certifications-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(96, 165, 250, 0.1) 0%, transparent 40%);
-  pointer-events: none;
+  content: none;
 }
 
 .certifications-section .container {
@@ -35,7 +26,7 @@
   text-align: center;
   font-size: 3.6rem;
   font-weight: 700;
-  color: white;
+  color: #0f172a;
   margin-bottom: 6.4rem;
   margin-top: 0;
   position: relative;
@@ -57,17 +48,16 @@
 .certification-year {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #60a5fa;
+  color: #0284c7;
   margin-bottom: 1.6rem;
   text-align: left;
   padding-bottom: 1.2rem;
-  border-bottom: 2px solid rgba(96, 165, 250, 0.3);
+  border-bottom: 2px solid rgba(2, 132, 199, 0.25);
 }
 
 .certification-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 12px;
   padding: 2.4rem;
   transition: all 0.3s;
@@ -88,10 +78,10 @@
 }
 
 .certification-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(96, 165, 250, 0.3);
+  background: #ffffff;
+  border-color: rgba(2, 132, 199, 0.3);
   transform: translateX(8px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .certification-card:hover::before {
@@ -99,51 +89,51 @@
 }
 
 .certification-card.featured {
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%);
-  border-color: rgba(96, 165, 250, 0.4);
+  background: rgba(2, 132, 199, 0.04);
+  border-color: rgba(2, 132, 199, 0.3);
 }
 
 .certification-card.in-progress {
-  border-color: rgba(147, 197, 253, 0.4);
-  background: rgba(147, 197, 253, 0.05);
+  border-color: rgba(2, 132, 199, 0.25);
+  background: rgba(2, 132, 199, 0.03);
 }
 
 .certification-badge {
   display: inline-block;
-  background: rgba(96, 165, 250, 0.2);
-  color: #93c5fd;
+  background: rgba(2, 132, 199, 0.08);
+  color: #0284c7;
   padding: 0.4rem 1.2rem;
   border-radius: 20px;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(96, 165, 250, 0.3);
+  border: 1px solid rgba(2, 132, 199, 0.2);
 }
 
 .certification-badge.featured-badge {
-  background: rgba(34, 197, 94, 0.2);
-  color: #4ade80;
-  border-color: rgba(34, 197, 94, 0.3);
+  background: rgba(5, 150, 105, 0.08);
+  color: #059669;
+  border-color: rgba(5, 150, 105, 0.2);
 }
 
 .certification-title {
   font-size: 2rem;
   font-weight: 700;
-  color: white;
+  color: #0f172a;
   margin-bottom: 0.8rem;
   line-height: 1.3;
 }
 
 .certification-provider {
   font-size: 1.6rem;
-  color: #cbd5e1;
+  color: #475569;
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
 
 .certification-score {
   font-size: 1.4rem;
-  color: #60a5fa;
+  color: #0284c7;
   font-weight: 600;
   margin-top: 0.8rem;
 }
